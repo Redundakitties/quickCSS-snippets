@@ -1,0 +1,36 @@
+/* blurred context menus */
+[class^=menu-],[class^=submenu-] {
+  background: none;
+}
+[class^=submenu-] {
+  margin: 0 -8px;
+}
+.theme-dark [class^=menu-]::after,.theme-dark [class^=submenu-]::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  border-radius: 5px;
+  background: #1b1d31b2;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 3px 1px rgb(0, 0, 0);
+}
+
+[class^=backdrop-] ~ .theme-dark[class*=layer-]>[class^=menu-] {
+  background: rgba(10, 10, 10, 0.3);
+}
+[class^=backdrop-] ~ [class*=layer-]>[class^=menu-]::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  backdrop-filter: blur(10px);
+  border-radius: 5px;
+  box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.2);
+}
+.section-3FmfOT, .divider-1tWBgZ, .scroller-1jBQYo {
+  z-index: 2;
+}
+:root .customItem-1KYL7t .button-1zW0-r {
+  background-color: transparent;
+}

@@ -1,0 +1,14 @@
+/* adds super cool Vencord watermark*/
+.wordmarkWindows-2dq6rw svg {
+  display: none;
+}
+
+.wordmarkWindows-2dq6rw::before {
+  content: 'Vencord';
+  font-size: 13px;
+  font-weight: 700;
+  top: 2px;
+  left: -3px;
+  position: relative;
+}
+

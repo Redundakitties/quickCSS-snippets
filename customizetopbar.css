@@ -1,0 +1,17 @@
+@import url('//objectiveslayer.github.io/bd-snippets/customizable-toolbar.css');
+/* Customize top bar */
+:root {
+  /* NOTE: change "block" to "none" if you want to hide the listed icons! */
+  /* Servers/DM's */
+  --threads-icon: none;
+  --notifications-settings-icon: none;
+  --pinned-messages-icon: block;
+  --memberlist-icon: block;
+  --search-bar: block;
+  /* --inbox-icon: none; */
+  --help-icon: none;
+  /* DM's/group-chats */
+  --voice-call-icon: block;
+  --video-call-icon: none;
+  --add-friends-to-dm-icon: block;
+}

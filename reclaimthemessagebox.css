@@ -1,0 +1,55 @@
+/* Hide Nitro gift button */
+button[aria-label="Send a gift"] {
+  display: none;
+}
+
+/* Hide GIF picker button */
+button[aria-label="Open GIF picker"] {
+  display: none;
+}
+
+/* Hide sticker picker button */
+button[aria-label="Open sticker picker"] {
+  display: none;
+}
+
+/* Hide annoying sticker popup window that appears when you type */
+.da-channelTextArea>.container-JHR0NT {
+  display: none;
+}
+
+[href="/store"] {
+  display: none;
+}
+
+/* make channel sidebar smaller */
+.sidebar-1tnWFu {
+  resize: horizontal;
+  width: 220px;
+}
+
+/* Hide User Buttons until Hover*/
+.panels-3wFtMD>.container-YkUktl .flex-2S1XBF> :not(:last-child) {
+  opacity: 0% !important;
+  width: 22px;
+  transition: all 0.2s ease-in-out;
+}
+
+.panels-3wFtMD>.container-YkUktl .nameTag-sc-gpq .defaultColor-1EVLSt .title-338goq {
+  overflow: visible;
+}
+
+::-webkit-resizer {
+  display: none;
+}
+
+/* tweak to position settings icon */
+.panels-3wFtMD>.container-YkUktl:hover .flex-2S1XBF> :not(:last-child) {
+  opacity: 100% !important;
+  width: 22px;
+}
+
+/* No, I don't want to make a thread from a chain of more than 2 replies */
+[class*="threadSuggestionBar-"] {
+  display:none;
+}
