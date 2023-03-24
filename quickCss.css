@@ -1,12 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Material+Icons");
 @import url('https://d3sox.github.io/complementary-discord-theme/hide-nitro-upselling.theme.css');
-@import url('https://raw.githubusercontent.com/Redundakitties/vencordQuickCSS/main/antilagsettings.css');
-@import url('https://raw.githubusercontent.com/Redundakitties/vencordQuickCSS/main/bgRoleColor.css');
-@import url('https://raw.githubusercontent.com/Redundakitties/vencordQuickCSS/main/onekoabovemsgbar.css');
-@import url('https://raw.githubusercontent.com/Redundakitties/vencordQuickCSS/main/customizetopbar.css');
-@import url('https://raw.githubusercontent.com/Redundakitties/vencordQuickCSS/main/floatingfolders.css');
-@import url('https://raw.githubusercontent.com/Redundakitties/vencordQuickCSS/main/reclaimthemessagebox.css');
-/* @import url('https://raw.githubusercontent.com/Redundakitties/vencordQuickCSS/main/blurredcontextmenu.css'); */
+@import url('https://raw.githubusercontent.com/Redundakitties/quickCSS-snippets/master/antilagsettings.css');
+@import url('https://raw.githubusercontent.com/Redundakitties/quickCSS-snippets/master/bgRoleColor.css');
+@import url('https://raw.githubusercontent.com/Redundakitties/quickCSS-snippets/master/onekoabovemsgbar.css');
+@import url('https://raw.githubusercontent.com/Redundakitties/quickCSS-snippets/master/customizetopbar.css');
+@import url('https://raw.githubusercontent.com/Redundakitties/quickCSS-snippets/master/floatingfolders.css');
+@import url('https://raw.githubusercontent.com/Redundakitties/quickCSS-snippets/master/reclaimthemessagebox.css');
+/* @import url('https://raw.githubusercontent.com/Redundakitties/quickCSS-snippets/master/blurredcontextmenu.css'); */
 
 /* Cabbage Theme */
 :root {
@@ -39,6 +39,9 @@
   --channel-text-area-placeholder: #565c7bb9;
   /* when mentioning a channel bg color */
   --mention-background: var(--background-mentioned-hover);
+  /* mentioning a person foreground */
+  --mention-foreground: var(--mention-text-color);
+  --mention-text-color: #93f4d4;
   /* when pinged, background color  */
   --background-mentioned: #09906a2c;
   --background-mentioned-hover: #16846c4b;
@@ -46,6 +49,9 @@
   --background-message-highlight: var(--background-secondary-alt);
   /* when hovering over a message you're replying to */
   --brand-experiment-10a: #1233385c;
+  /* outline of reactions */
+  --brand-experiment: var(--main-color);
+  --brand-experiment-15a: var(--background-mentioned-hover);
 
   /* Cards */
   --card: #212332;
@@ -77,10 +83,10 @@
 :root .content-yjf30S>.containerDefault-YUSmu3:hover {
   background-color: var(--hovering-over-channel);
 }
-/* make selected channel pretty */
-/* :root .content-yjf30S .selected-2TbFuo {
-  background-image: linear-gradient(to right top, #09906a04, #029a192e);
-} */
+/* move category titles to the left */
+:root .containerDefault-3TQ5YN {
+  left: -11px;
+}
 
 /* changing the border color of in-chat mention */
 :root .mentioned-Tre-dv::before {
@@ -91,9 +97,13 @@
 }
 /* when hovering over channel mentions */
 :root .channelMention {
-  color: #93f4d4;
+  color: var(--mention-text-color);
 }
 :root .channelMention:hover {
+  background-color: var(--main-color);
+}
+/* hovering over person mentions */
+:root .mention:hover {
   background-color: var(--main-color);
 }
 
@@ -692,17 +702,14 @@
   width: 0 !important;
 }
 
-/* honestly i don't know */
-
+/* emphasis server pings */
 :root .guilds-2JjMmN .scroller-3X7KbA .listItem-3SmSlK .lowerBadge-3j0ZAg:last-child .numberBadge-37OJ3S {
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5333333333);
-  /* emphasis server pings */
 }
-
+/* on hover colors default server colors */
 :root .guilds-2JjMmN .scroller-3X7KbA .listItem-3SmSlK .wrapper-3kah-n.selected-1Drb7Z .childWrapper-1j_1ub,
 :root .guilds-2JjMmN .scroller-3X7KbA .listItem-3SmSlK .wrapper-3kah-n:hover .childWrapper-1j_1ub {
   background: var(--main-color);
-  /* on hover colors default server colors */
 }
 
 :root .guilds-2JjMmN .scroller-3X7KbA .listItem-3SmSlK .wrapper-3kah-n .childWrapper-1j_1ub {
@@ -887,9 +894,9 @@
   padding: 0 22px;
 }
 
+/* keep category headings capital */
 :root .container-q97qHp {
   color: var(--textcolor);
-  text-transform: unset;
   font-size: 14px;
 }
 
@@ -1467,6 +1474,17 @@
 
 :root .panels-3wFtMD .activityPanel-9icbyU:hover {
   background-color: var(--background-modifier-selected);
+}
+
+/* Settings, Mic, and Deafen button color */
+:root .panels-3wFtMD > .container-YkUktl {
+  background-color: transparent;
+}
+:root .panels-3wFtMD > .container-YkUktl .button-12Fmur {
+  color: var(--main-color);
+}
+:root .panels-3wFtMD > .container-YkUktl .button-12Fmur[aria-checked=false].enabled-9OeuTA {
+  color: var(--main-color);
 }
 
 /* #region noChat */
