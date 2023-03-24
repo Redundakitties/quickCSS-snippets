@@ -34,16 +34,18 @@
   /* anything selected */
   --background-modifier-selected: var(--background-mentioned);
   /* channel */
-  --hovering-over-channel: rgba(0, 111, 89, 0.144);
+  --hovering-over-channel: #006f5924;
   --channel-icon: #419e8584;
   --channel-text-area-placeholder: #565c7bb9;
   /* when mentioning a channel bg color */
   --mention-background: var(--background-mentioned-hover);
   /* when pinged, background color  */
-  --background-mentioned: rgba(9, 144, 106, 0.175);
-  --background-mentioned-hover: rgba(22, 132, 108, 0.296);
-  --background-message-highlight: #0003;
-  --brand-experiment-10a: rgba(18, 51, 56, 0.362);
+  --background-mentioned: #09906a2c;
+  --background-mentioned-hover: #16846c4b;
+  /* color of message you're replying to */
+  --background-message-highlight: var(--background-secondary-alt);
+  /* when hovering over a message you're replying to */
+  --brand-experiment-10a: #1233385c;
 
   /* Cards */
   --card: #212332;
@@ -75,6 +77,10 @@
 :root .content-yjf30S>.containerDefault-YUSmu3:hover {
   background-color: var(--hovering-over-channel);
 }
+/* make selected channel pretty */
+/* :root .content-yjf30S .selected-2TbFuo {
+  background-image: linear-gradient(to right top, #09906a04, #029a192e);
+} */
 
 /* changing the border color of in-chat mention */
 :root .mentioned-Tre-dv::before {
