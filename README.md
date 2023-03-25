@@ -15,7 +15,7 @@ Comparison:
 <summary>For Vencord</summary>
 Either:
 a) copy and paste this code from 
-<a href="https://raw.githubusercontent.com/Redundakitties/quickCSS-snippets/master/OnlyCouveTweaks/quickCss.css"><code>./OnlyCouveTweaks/quickCss.css</code></a> file found here: <code>C:\Users\<name>\AppData\Roaming\Vencord\settings\quickCss.css</code>
+<a href="https://raw.githubusercontent.com/Redundakitties/quickCSS-snippets/master/OnlyCouveTweaks/quickCss.css"><code>./OnlyCouveTweaks/quickCss.css</code></a> into your <code>quickCss.css</code> file found here: <code>C:\Users\<name>\AppData\Roaming\Vencord\settings\quickCss.css</code>
 
 b) paste this link <code>https://raw.githubusercontent.com/Redundakitties/quickCSS-snippets/master/OnlyCouveTweaks/quickCss.css</code> into the theme section in your settings like you would any other theme.
 </details>
