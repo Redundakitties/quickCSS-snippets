@@ -33,6 +33,7 @@
 
   /* anything selected in menu */
   --background-modifier-selected: var(--background-mentioned);
+  --interactive-active: var(--main-color);
   
   /* channel colors */
   --hovering-over-channel: var(--background-mentioned);
@@ -67,14 +68,29 @@
   --font-display: var(--font-p.guildrimary) !important;
 }
 
-/* square profiles */
+/* #region square profiles */
 :root .messagesWrapper-RpOMA3 .cozy-VmLDNB.wrapper-30-Nkg .avatar-2e8lTP {
   border-radius: var(--avatar-radius);
 }
-
 :root .bannerSVGWrapper-qc0szY mask {
   display: none;
 }
+/* #endregion */
+/* #region block quotes */
+:root .messagesWrapper-RpOMA3 .cozy-VmLDNB.wrapper-30-Nkg .blockquoteContainer-3VtvI1 blockquote {
+  padding: 8px;
+  background: var(--background-secondary);
+  border-radius: 4px;
+  width: 100%;
+}
+:root .messagesWrapper-RpOMA3 .cozy-VmLDNB.wrapper-30-Nkg.hasThread-3h-KJV::after {
+  margin-left: 24px;
+}
+:root .messagesWrapper-RpOMA3 .cozy-VmLDNB.wrapper-30-Nkg.hasThread-3h-KJV .container-2sjPya {
+  margin-left: 48px;
+  border-radius: 8px;
+}
+/* #endregion */
 
 /* height of the container that holds messages */
 :root .scroller-kQBbkU {
@@ -176,6 +192,11 @@
   text-align: center;
   border-radius: 5px;
   height: unset;
+}
+
+/* change color of new message date to main color */
+:root .isUnread-3Lojb- .content-3spvdd {
+  color: var(--main-color) !important;
 }
 
 :root .divider-2rZFJK .unreadPill-3nEWYM {
@@ -726,7 +747,7 @@
 /* #region Guild Editing */
 :root .guilds-2JjMmN {
   position: relative;
-  margin-top: -12px;
+  margin-top: -10px;
   /* move guild list upward */
 }
 
