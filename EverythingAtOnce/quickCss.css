@@ -8,7 +8,7 @@
 @import url('https://raw.githubusercontent.com/Redundakitties/quickCSS-snippets/master/snippets/reclaimthemessagebox.css');
 /* @import url('https://raw.githubusercontent.com/Redundakitties/quickCSS-snippets/master/snippets/blurredcontextmenu.css'); */
 
-/* Cabbage Theme */
+/* Cabbage Theme made by NYRI4*/
 :root {
   --version: "2.3.0";
   --main-color: #419e85;
@@ -22,7 +22,6 @@
   --background-secondary-alt: #1c2438;
   --background-secondary-alt-alt: #1b1d31;
   --background-tertiary: #060c24;
-
   --deprecated-store-bg: var(--background-primary);
   --background-floating: var(--background-secondary);
   --background-mobile-primary: var(--background-primary);
@@ -31,25 +30,33 @@
   --modal-background: var(--background-primary);
   --colortransparency: #0003;
   --interactive-muted: #565c7bb9;
-  /* anything selected */
+
+  /* anything selected in menu */
   --background-modifier-selected: var(--background-mentioned);
-  /* channel */
+  
+  /* channel colors */
   --hovering-over-channel: var(--background-mentioned);
   --channel-icon: #419e8584;
   --channel-text-area-placeholder: #565c7bb9;
-  /* when mentioning a channel bg color */
+
+  /* 1. when mentioning a channel bg color */
   --mention-background: var(--background-mentioned);
-  /* when pinged, foreground color */
+
+  /* 1. when pinged, foreground color */
   --mention-foreground: var(--main-color);
-  /* when pinged, background color  */
+
+  /* 1. when pinged, background color  */
   --background-mentioned: #06836021;
-  --background-mentioned-hover: #16846c4b;
-  /* color of message you're replying to */
+  --background-mentioned-hover: #16846c39;
+
+  /* 2. color of message you're replying to */
   --background-message-highlight: var(--background-secondary-alt);
-  /* when hovering over a message you're replying to */
-  --brand-experiment-10a: #1233385c;
+
+  /* 2. when hovering over a message you're replying to */
+  --brand-experiment-10a: #1036343a;
+
   /* outline of reactions */
-  --brand-experiment: var(--main-color);
+  --brand-experiment: #419e8584; 
   --brand-experiment-15a: var(--background-mentioned-hover);
 
   /* Cards */
