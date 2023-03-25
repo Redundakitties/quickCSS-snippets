@@ -1,12 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Material+Icons");
 @import url('https://d3sox.github.io/complementary-discord-theme/hide-nitro-upselling.theme.css');
-@import url('https://raw.githubusercontent.com/Redundakitties/quickCSS-snippets/master/antilagsettings.css');
-@import url('https://raw.githubusercontent.com/Redundakitties/quickCSS-snippets/master/bgRoleColor.css');
-@import url('https://raw.githubusercontent.com/Redundakitties/quickCSS-snippets/master/onekoabovemsgbar.css');
-@import url('https://raw.githubusercontent.com/Redundakitties/quickCSS-snippets/master/customizetopbar.css');
-@import url('https://raw.githubusercontent.com/Redundakitties/quickCSS-snippets/master/floatingfolders.css');
-@import url('https://raw.githubusercontent.com/Redundakitties/quickCSS-snippets/master/reclaimthemessagebox.css');
-/* @import url('https://raw.githubusercontent.com/Redundakitties/quickCSS-snippets/master/blurredcontextmenu.css'); */
+@import url('https://raw.githubusercontent.com/Redundakitties/quickCSS-snippets/master/snippets/antilagsettings.css');
+@import url('https://raw.githubusercontent.com/Redundakitties/quickCSS-snippets/master/snippets/bgRoleColor.css');
+@import url('https://raw.githubusercontent.com/Redundakitties/quickCSS-snippets/master/snippets/onekoabovemsgbar.css');
+@import url('https://raw.githubusercontent.com/Redundakitties/quickCSS-snippets/master/snippets/customizetopbar.css');
+@import url('https://raw.githubusercontent.com/Redundakitties/quickCSS-snippets/master/snippets/floatingfolders.css');
+@import url('https://raw.githubusercontent.com/Redundakitties/quickCSS-snippets/master/snippets/reclaimthemessagebox.css');
+/* @import url('https://raw.githubusercontent.com/Redundakitties/quickCSS-snippets/master/snippets/blurredcontextmenu.css'); */
 
 /* Cabbage Theme */
 :root {
