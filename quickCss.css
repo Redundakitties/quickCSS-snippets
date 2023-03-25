@@ -34,16 +34,15 @@
   /* anything selected */
   --background-modifier-selected: var(--background-mentioned);
   /* channel */
-  --hovering-over-channel: #006f5924;
+  --hovering-over-channel: var(--background-mentioned);
   --channel-icon: #419e8584;
   --channel-text-area-placeholder: #565c7bb9;
   /* when mentioning a channel bg color */
-  --mention-background: var(--background-mentioned-hover);
-  /* mentioning a person foreground */
-  --mention-foreground: var(--mention-text-color);
-  --mention-text-color: #93f4d4;
+  --mention-background: var(--background-mentioned);
+  /* when pinged, foreground color */
+  --mention-foreground: var(--main-color);
   /* when pinged, background color  */
-  --background-mentioned: #09906a2c;
+  --background-mentioned: #06836021;
   --background-mentioned-hover: #16846c4b;
   /* color of message you're replying to */
   --background-message-highlight: var(--background-secondary-alt);
@@ -58,15 +57,16 @@
   --textcolor: #e4e4e4;
   --epicshadow1: #fff3;
   /* Font */
-  --font-display: var(--font-primary) !important;
+  --font-display: var(--font-p.guildrimary) !important;
 }
 
 /* square profiles */
 :root .messagesWrapper-RpOMA3 .cozy-VmLDNB.wrapper-30-Nkg .avatar-2e8lTP {
   border-radius: var(--avatar-radius);
 }
+
 :root .bannerSVGWrapper-qc0szY mask {
-    display: none;
+  display: none;
 }
 
 /* height of the container that holds messages */
@@ -79,32 +79,51 @@
   background-color: transparent;
 }
 
-/* when hovering over channel */
-:root .content-yjf30S>.containerDefault-YUSmu3:hover {
+/* #region channel category tweaks */
+/* Channel hover and click animation */
+.containerDefault-YUSmu3 {
+  transition: all 0.5s;
+}
+
+.containerDefault-YUSmu3:hover {
+  transition: all 0.2s;
+  transform: translatex(3px);
   background-color: var(--hovering-over-channel);
 }
+
+.containerDefault-YUSmu3:active {
+  transition: all 0.2s;
+  transform: translatex(1px);
+}
+
 /* move category titles to the left */
 :root .containerDefault-3TQ5YN {
   left: -11px;
 }
 
-/* changing the border color of in-chat mention */
-:root .mentioned-Tre-dv::before {
-  background-color: var(--main-color);
-}
-:root .message-2CShn3::before {
-  background-color: var(--main-color);
-}
+/* #endregion */
+
+/* #region mentions */
+/* changing the border color of in-chat mention + reply */
+:root .mentioned-Tre-dv::before { background-color: var(--main-color); }
+:root .message-2CShn3::before { background-color: var(--main-color); }
+
 /* when hovering over channel mentions */
-:root .channelMention {
-  color: var(--mention-text-color);
+:root .channelMention:hover, .mention:hover { 
+  text-decoration: none !important;
+  color: var(--main-color);
+  background-color: var(--background-mentioned-hover); }
+
+/* #endregion */
+
+.homeIcon-r0w4ny path {
+  fill: transparent
 }
-:root .channelMention:hover {
-  background-color: var(--main-color);
-}
-/* hovering over person mentions */
-:root .mention:hover {
-  background-color: var(--main-color);
+
+.homeIcon-r0w4ny {
+  background: url('https://i.imgur.com/2XrlegJ.png') center/cover no-repeat;
+  min-width: 60px;
+  min-height: 60px;
 }
 
 /* #region x messages since <time> */
@@ -113,6 +132,7 @@
   padding: 5px;
   opacity: 1;
 }
+
 :root .newMessagesBar-1hF-9G .barButtonMain-2GIx4o {
   opacity: 0.6;
 }
@@ -144,7 +164,6 @@
 :root .divider-2rZFJK .content-3spvdd,
 :root .divider-2rZFJK#---new-messages-bar .unreadPill-3nEWYM {
   background: var(--background-secondary);
-  color: var(--main-color);
   width: 100%;
   padding: 10px;
   text-align: center;
@@ -673,16 +692,20 @@
   background: var(--background-primary);
 }
 
-:root .container-3wLKDe > .scrollerBase-1Pkza4 {
+:root .container-3wLKDe>.scrollerBase-1Pkza4 {
   background-color: var(--background-primary);
 }
-:root .container-3wLKDe > .scrollerBase-1Pkza4 .tagsContainer-2bBw1x button, :root .container-3wLKDe > .scrollerBase-1Pkza4 .tagsContainer-2bBw1x .tag-19iIl1 {
+
+:root .container-3wLKDe>.scrollerBase-1Pkza4 .tagsContainer-2bBw1x button,
+:root .container-3wLKDe>.scrollerBase-1Pkza4 .tagsContainer-2bBw1x .tag-19iIl1 {
   background-color: var(--background-secondary-alt-alt);
 }
-:root .container-3wLKDe > .scrollerBase-1Pkza4 .mainCard-3KBsBI {
+
+:root .container-3wLKDe>.scrollerBase-1Pkza4 .mainCard-3KBsBI {
   background-color: var(--background-secondary);
 }
-:root .container-3wLKDe > .scrollerBase-1Pkza4::-webkit-scrollbar {
+
+:root .container-3wLKDe>.scrollerBase-1Pkza4::-webkit-scrollbar {
   display: none;
 }
 
@@ -694,18 +717,18 @@
 
 /* #region Guild Editing */
 :root .guilds-2JjMmN {
-  margin-top: -30px;
+  position: relative;
+  margin-top: -12px;
   /* move guild list upward */
 }
 
-:root .guilds-2JjMmN.hidden-10MsGQ {
-  width: 0 !important;
-}
+:root .guilds-2JjMmN.hidden-10MsGQ { width: 0 !important; }
 
 /* emphasis server pings */
 :root .guilds-2JjMmN .scroller-3X7KbA .listItem-3SmSlK .lowerBadge-3j0ZAg:last-child .numberBadge-37OJ3S {
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5333333333);
 }
+
 /* on hover colors default server colors */
 :root .guilds-2JjMmN .scroller-3X7KbA .listItem-3SmSlK .wrapper-3kah-n.selected-1Drb7Z .childWrapper-1j_1ub,
 :root .guilds-2JjMmN .scroller-3X7KbA .listItem-3SmSlK .wrapper-3kah-n:hover .childWrapper-1j_1ub {
@@ -918,7 +941,7 @@
   padding-left: 28px;
 }
 
-/* #region unread NEW at bottom of server list */
+/* #region bottom mention on server list */
 :root .unread-2wipsx,
 :root .bar-wDIGjg {
   border-radius: 4px;
@@ -1477,13 +1500,15 @@
 }
 
 /* Settings, Mic, and Deafen button color */
-:root .panels-3wFtMD > .container-YkUktl {
+:root .panels-3wFtMD>.container-YkUktl {
   background-color: transparent;
 }
-:root .panels-3wFtMD > .container-YkUktl .button-12Fmur {
+
+:root .panels-3wFtMD>.container-YkUktl .button-12Fmur {
   color: var(--main-color);
 }
-:root .panels-3wFtMD > .container-YkUktl .button-12Fmur[aria-checked=false].enabled-9OeuTA {
+
+:root .panels-3wFtMD>.container-YkUktl .button-12Fmur[aria-checked=false].enabled-9OeuTA {
   color: var(--main-color);
 }
 
@@ -1693,10 +1718,6 @@ body {
 
 .platform-win .chat-2ZfjoI .wrapper-1gVUIN:not(.minimum-fXpVNc) .search-39IXmY {
   top: 50px;
-}
-
-.platform-win .appMount-2yBXZl .app-3xd6d0 .scroller-3X7KbA {
-  padding-top: 20px;
 }
 
 .platform-win .appMount-2yBXZl .app-3xd6d0 .content-1SgpWY::after {
@@ -2115,10 +2136,10 @@ html:not(.platform-linux) body:not(.maximized).transparent .appMount-2yBXZl {
   border-radius: 8px;
 }
 
-:root .input-125oad rect,
+/* :root .input-125oad rect,
 :root .container-1QtPKm rect {
   rx: 8px;
-}
+} */
 
 :root .option-Uc12mm:hover {
   background: rgba(255, 255, 255, 0.05) !important;
@@ -2138,11 +2159,6 @@ html:not(.platform-linux) body:not(.maximized).transparent .appMount-2yBXZl {
   overflow: hidden;
   background: var(--background-secondary-alt);
   box-shadow: unset;
-}
-
-:root .submenuPaddingContainer-QgnL1r {
-  margin-left: -8px;
-  margin-right: -8px;
 }
 
 :root .button-1zW0-r,
@@ -2350,18 +2366,18 @@ html:not(.platform-linux) body:not(.maximized).transparent .appMount-2yBXZl {
   border-radius: var(--avatar-radius) !important;
 }
 
-:root .pointerEvents-2KjWnj {
+/* :root .pointerEvents-2KjWnj {
   mask: none !important;
-  rx: 30;
-}
 
-:root .pointerEvents-2KjWnj[mask="url(#svg-mask-status-typing)"] {
+} */
+
+/* :root .pointerEvents-2KjWnj[mask="url(#svg-mask-status-typing)"] {
   rx: 6;
 }
 
 :root .pointerEvents-2KjWnj[mask="url(#svg-mask-status-online-mobile)"] {
   rx: 4;
-}
+} */
 
 /* #region cute ready animation for cabbage */
 :root .ready-3BZNWT {
@@ -2382,6 +2398,7 @@ html:not(.platform-linux) body:not(.maximized).transparent .appMount-2yBXZl {
   background: url("https://i.imgur.com/2XrlegJ.png") center/80% no-repeat;
   animation: jump 1s infinite;
 }
+
 /* #endregion */
 
 /* #region animation jump */
@@ -2444,6 +2461,7 @@ html:not(.platform-linux) body:not(.maximized).transparent .appMount-2yBXZl {
     opacity: 1;
   }
 }
+
 /* #endregion */
 
 /* #region zoom and call zoom */
@@ -2493,27 +2511,12 @@ html:not(.platform-linux) body:not(.maximized).transparent .appMount-2yBXZl {
     content: "-_-";
   }
 }
+
 /* #endregion */
 
 :root .scale-3UGUBw.didRender-2SiRlm {
   transform: scale(1) !important;
 }
-
-/* #region status picker */
-:root #status-picker.menu-1QACrS #status-picker-custom-status .labelContainer-2vJzYL {
-  padding: 0 16px;
-}
-
-:root #status-picker.menu-1QACrS #status-picker-custom-status+.layer-2BGhQ8 {
-  top: 432px !important;
-  left: 359px !important;
-}
-
-:root #status-picker.menu-1QACrS #status-picker-custom-status+.layer-2BGhQ8 .submenu-1apzyU {
-  background: var(--background-tertiary);
-  border-radius: 0 8px 8px 0;
-}
-/* #endregion */
 
 :root .gameActivityToggleAdded-Yd-YxC>div:last-child button:first-child {
   color: var(--main-color);
