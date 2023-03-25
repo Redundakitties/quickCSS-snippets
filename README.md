@@ -29,6 +29,6 @@ copy and paste this code from
 <a href="https://raw.githubusercontent.com/Redundakitties/quickCSS-snippets/master/OnlyCouveTweaks/quickCss.css"><code>./OnlyCouveTweaks/quickCss.css</code></a> into your css file.
 </details>
 
-# Credits
+### Credits
 
 All credits go to [NYRI4](https://github.com/NYRI4/Couve), who I originally found this theme from. 
