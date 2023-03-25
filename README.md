@@ -9,6 +9,16 @@ Comparison:
 ![Cabbage Theme](https://github.com/Redundakitties/quickCSS-snippets/blob/master/cabbage.png)
 
 ## Setup
-Either a) copy and paste this code from [`./OnlyCouveTweaks/quickCss.css`](https://raw.githubusercontent.com/Redundakitties/quickCSS-snippets/master/OnlyCouveTweaks/quickCss.css) into your `quickCss.css` file found here: `C:\Users\<name>\AppData\Roaming\Vencord\settings\quickCss.css`
+<details>
 
-Or b) paste this link `https://raw.githubusercontent.com/Redundakitties/quickCSS-snippets/master/OnlyCouveTweaks/quickCss.css` into your theme section like you would any other theme.
+<summary>For Vencord</summary>
+Either:
+a) copy and paste this code from [`./OnlyCouveTweaks/quickCss.css`](https://raw.githubusercontent.com/Redundakitties/quickCSS-snippets/master/OnlyCouveTweaks/quickCss.css) into your `quickCss.css` file found here: `C:\Users\<name>\AppData\Roaming\Vencord\settings\quickCss.css`
+
+b) paste this link `https://raw.githubusercontent.com/Redundakitties/quickCSS-snippets/master/OnlyCouveTweaks/quickCss.css` into the theme section in your settings like you would any other theme.
+</details>
+
+<details>
+<summary>For BetterDiscord</summary>
+copy and paste this code from [`./OnlyCouveTweaks/quickCss.css`](https://raw.githubusercontent.com/Redundakitties/quickCSS-snippets/master/OnlyCouveTweaks/quickCss.css) into your `quickCss.css` file.
+</details>
