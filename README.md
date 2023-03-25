@@ -1,8 +1,6 @@
 # QuickCSS Snippets
 *ONLY FOR DARK THEME*
 
-Couve was made by [NYRI4](https://github.com/NYRI4)! All credit goes to them. 
-
 The Folder [EverythingAtOnce](https://github.com/Redundakitties/quickCSS-snippets/tree/master/EverythingAtOnce) includes all the snippets in the snippets folder applied to my theme. I will update this readme one day to explain what they all do but their names are fairly self-explanatory. 
 
 
@@ -30,3 +28,7 @@ b) paste this link <code>https://raw.githubusercontent.com/Redundakitties/quickC
 copy and paste this code from
 <a href="https://raw.githubusercontent.com/Redundakitties/quickCSS-snippets/master/OnlyCouveTweaks/quickCss.css"><code>./OnlyCouveTweaks/quickCss.css</code></a> into your css file.
 </details>
+
+# Credits
+
+All credits go to [NYRI4](https://github.com/NYRI4/Couve), who I originally found this theme from. 
