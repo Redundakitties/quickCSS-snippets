@@ -6,7 +6,8 @@ The Folder [EverythingAtOnce](https://github.com/Redundakitties/quickCSS-snippet
 The Folder [OnlyCouveTweaks](https://github.com/Redundakitties/quickCSS-snippets/tree/master/OnlyCouveTweaks) is what you want to use. I've copied and pasted everything in Couve's original [app.css](https://github.com/NYRI4/Couve/blob/main/betterdiscord/app.css) file and commented at the very top. All of my changes you can see in the following image, and hopefully followable so you can tweak to your liking :) 
 
 Comparison: 
-<img src="https://github.com/Redundakitties/quickCSS-snippets/blob/master/cabbage.png" alt= "Cabbage Theme" height="300">
+<br>
+<img src="https://github.com/Redundakitties/quickCSS-snippets/blob/master/cabbage.png" alt= "Cabbage Theme" height="500">
 
 ## Setup
 <details>
