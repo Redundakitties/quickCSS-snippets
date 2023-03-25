@@ -2,6 +2,95 @@
 @import url("https://custom-avatar-hints.github.io/hints/app/language-hell.css");
 @import url("https://nyri4.github.io/donators/donators.css");
 @import url("https://fonts.googleapis.com/css2?family=Material+Icons");
+
+/* Cabbage Theme */
+:root {
+  --version: "2.3.0";
+  --main-color: #419e85;
+  --avatar-radius: 4px;
+}
+
+.theme-dark {
+  /* BGs */
+  --background-primary: #252a3e;
+  --background-secondary: #1e2337;
+  --background-secondary-alt: #1c2438;
+  --background-secondary-alt-alt: #1b1d31;
+  --background-tertiary: #060c24;
+  --deprecated-store-bg: var(--background-primary);
+  --background-floating: var(--background-secondary);
+  --background-mobile-primary: var(--background-primary);
+  --activity-card-background: var(--background-secondary);
+  --input-background: var(--background-secondary);
+  --modal-background: var(--background-primary);
+  --colortransparency: #0003;
+  --interactive-muted: #565c7bb9;
+
+  /* anything selected in menu */
+  --background-modifier-selected: var(--background-mentioned);
+  
+  /* channel colors */
+  --hovering-over-channel: var(--background-mentioned);
+  --channel-icon: #419e8584;
+  --channel-text-area-placeholder: #565c7bb9;
+
+  /* 1. when mentioning a channel bg color */
+  --mention-background: var(--background-mentioned);
+
+  /* 1. when pinged, foreground color */
+  --mention-foreground: var(--main-color);
+
+  /* 1. when pinged, background color  */
+  --background-mentioned: #06836021;
+  --background-mentioned-hover: #16846c39;
+
+  /* 2. color of message you're replying to */
+  --background-message-highlight: var(--background-secondary-alt);
+
+  /* 2. when hovering over a message you're replying to */
+  --brand-experiment-10a: #1036343a;
+
+  /* outline of reactions */
+  --brand-experiment: #419e8584; 
+  --brand-experiment-15a: var(--background-mentioned-hover);
+
+  /* Cards */
+  --card: #212332;
+  --textcolor: #e4e4e4;
+  --epicshadow1: #fff3;
+  /* Font */
+  --font-display: var(--font-p.guildrimary) !important;
+}
+
+/* 1. changing the border color of in-chat mention + reply */
+:root .mentioned-Tre-dv::before { background-color: var(--main-color); }
+:root .message-2CShn3::before { background-color: var(--main-color); }
+
+/* 1. when hovering over channel mentions */
+:root .channelMention:hover, .mention:hover { 
+  text-decoration: none !important;
+  color: var(--main-color);
+  background-color: var(--background-mentioned-hover); }
+
+/* 5. make bg of quick reacts transparent */
+:root .customItem-1KYL7t .button-1zW0-r {
+  background-color: transparent;
+}
+
+/* 6. change color of new bar to main color */
+:root .divider-2rZFJK .unreadPill-3nEWYM {
+  position: relative;
+  color: var(--main-color);
+  top: 0;
+}
+
+/* 6. change color of new message date to main color */
+:root .isUnread-3Lojb- .content-3spvdd {
+  color: var(--main-color) !important;
+}
+
+/* ------------------ App.css ------------------- */
+/* some sections are commented out to allow above css to work */
 :root .messagesWrapper-RpOMA3 {
   flex-direction: column;
 }
@@ -78,18 +167,19 @@
   border-radius: 5px;
   background: var(--main-color);
 }
-:root .wrapper-1ZcZW- {
+/* Old mention color */
+/* :root .wrapper-1ZcZW- {
   background: transparent !important;
   position: relative;
   color: var(--main-color) !important;
-}
+} */
 :root .wrapper-1ZcZW-.mention {
   border-radius: 5px;
 }
-:root .wrapper-1ZcZW-:hover::after {
+/* :root .wrapper-1ZcZW-:hover::after {
   opacity: 0.2;
-}
-:root .wrapper-1ZcZW-::after {
+} */
+/* :root .wrapper-1ZcZW-::after {
   content: "";
   position: absolute;
   top: 0;
@@ -101,7 +191,7 @@
   border-radius: 5px;
   transition: opacity 200ms;
   pointer-events: none;
-}
+} */
 :root .newMessagesBar-1hF-9G {
   position: static;
   margin: 5px 40px 0 40px;
@@ -134,11 +224,6 @@
   text-align: center;
   border-radius: 5px;
   height: unset;
-}
-:root .divider-2rZFJK .unreadPill-3nEWYM {
-  position: relative;
-  color: #f04747;
-  top: 0;
 }
 :root .divider-2rZFJK .unreadPill-3nEWYM .unreadPillCap-2-iI4h {
   display: none;
