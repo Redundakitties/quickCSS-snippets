@@ -33,7 +33,7 @@
 
   /* anything selected in menu */
   --background-modifier-selected: var(--background-mentioned);
-  --interactive-active: var(--main-color);
+  --interactive-active: #6FD6A2;
   
   /* channel colors */
   --hovering-over-channel: var(--background-mentioned);
@@ -66,6 +66,12 @@
   --epicshadow1: #fff3;
   /* Font */
   --font-display: var(--font-p.guildrimary) !important;
+}
+
+/* #region customize status */
+rect[mask="url(#svg-mask-status-online)"],
+rect[mask="url(#svg-mask-status-online-mobile)"] {
+  fill: var(--main-color);
 }
 
 /* #region square profiles */
