@@ -65,7 +65,7 @@
   --textcolor: #e4e4e4;
   --epicshadow1: #fff3;
   /* Font */
-  --font-display: var(--font-p.guildrimary) !important;
+  --font-display: var(--font-primary) !important;
 }
 
 /* #region customize status */

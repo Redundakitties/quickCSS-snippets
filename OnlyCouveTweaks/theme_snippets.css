@@ -1,0 +1,59 @@
+:root {
+    /* anything selected in menu */
+    --background-modifier-selected: var(--background-mentioned);
+  
+    /* This isn't shown in my screenshot but I think it looks cool */
+    /* --interactive-active: #6FD6A2; */
+    
+    /* channel colors */
+    --hovering-over-channel: var(--background-mentioned);
+    --channel-icon: #419e8584;
+    --channel-text-area-placeholder: #565c7bb9;
+  
+    /* 1. when mentioning a channel bg color */
+    --mention-background: var(--background-mentioned);
+  
+    /* 1. when pinged, foreground color */
+    --mention-foreground: var(--main-color);
+  
+    /* 1. when pinged, background color  */
+    --background-mentioned: #06836021;
+    --background-mentioned-hover: #16846c39;
+  
+    /* 2. color of message you're replying to */
+    --background-message-highlight: var(--background-secondary-alt);
+  
+    /* 2. when hovering over a message you're replying to */
+    --brand-experiment-10a: #1036343a;
+  
+    /* outline of reactions */
+    --brand-experiment: #419e8584; 
+    --brand-experiment-15a: var(--background-mentioned-hover);
+  
+    /* makes muted text color a little more blue */
+    --interactive-muted: #565c7bb9;
+  
+  }
+  /* 1. changing the border color of in-chat mention + reply */
+  :root .mentioned-Tre-dv::before { background-color: var(--main-color); }
+  :root .message-2CShn3::before { background-color: var(--main-color); }
+  
+  /* 1. when hovering over channel mentions */
+  :root .channelMention:hover, .mention:hover { 
+    text-decoration: none !important;
+    color: var(--main-color);
+    background-color: var(--background-mentioned-hover); }
+  
+  /* 5. make bg of quick reacts transparent */
+  :root .customItem-1KYL7t .button-1zW0-r {
+    background-color: transparent; }
+  
+  /* 6. change color of NEW bar to main color */
+  :root .divider-2rZFJK .unreadPill-3nEWYM {
+    position: relative;
+    color: var(--main-color);
+    top: 0; }
+  
+  /* 6. change color of new message date to main color */
+  :root .isUnread-3Lojb- .content-3spvdd {
+    color: var(--main-color) !important; }
