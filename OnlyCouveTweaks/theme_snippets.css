@@ -31,9 +31,9 @@
     --brand-experiment-15a: var(--background-mentioned-hover);
   
     /* makes muted text color a little more blue */
-    --interactive-muted: #565c7bb9;
-  
+    --interactive-muted: #565c7bb9;  
   }
+
   /* 1. changing the border color of in-chat mention + reply */
   :root .mentioned-Tre-dv::before { background-color: var(--main-color); }
   :root .message-2CShn3::before { background-color: var(--main-color); }
@@ -42,18 +42,22 @@
   :root .channelMention:hover, .mention:hover { 
     text-decoration: none !important;
     color: var(--main-color);
-    background-color: var(--background-mentioned-hover); }
+    background-color: var(--background-mentioned-hover); 
+  }
   
   /* 5. make bg of quick reacts transparent */
   :root .customItem-1KYL7t .button-1zW0-r {
-    background-color: transparent; }
+    background-color: transparent; 
+  }
   
   /* 6. change color of NEW bar to main color */
   :root .divider-2rZFJK .unreadPill-3nEWYM {
     position: relative;
     color: var(--main-color);
-    top: 0; }
+    top: 0; 
+  }
   
   /* 6. change color of new message date to main color */
   :root .isUnread-3Lojb- .content-3spvdd {
-    color: var(--main-color) !important; }
+    color: var(--main-color) !important; 
+  }
