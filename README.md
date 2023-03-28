@@ -37,4 +37,5 @@ copy and paste this code from
 </details>
 
 ### Credits
-All credits go to [NYRI4](https://github.com/NYRI4/Couve), who I originally found this theme from. 
+- Credits go to [NYRI4](https://github.com/NYRI4/Couve), who I originally found this theme from. 
+- Some of these tweaks are from HereToHelp from the [Comfy Discord server](https://discord.gg/comfy-camp-811203761619337259) 

@@ -32,32 +32,49 @@
   
     /* makes muted text color a little more blue */
     --interactive-muted: #565c7bb9;  
-  }
+}
 
-  /* 1. changing the border color of in-chat mention + reply */
-  :root .mentioned-Tre-dv::before { background-color: var(--main-color); }
-  :root .message-2CShn3::before { background-color: var(--main-color); }
-  
-  /* 1. when hovering over channel mentions */
-  :root .channelMention:hover, .mention:hover { 
-    text-decoration: none !important;
-    color: var(--main-color);
-    background-color: var(--background-mentioned-hover); 
-  }
-  
-  /* 5. make bg of quick reacts transparent */
-  :root .customItem-1KYL7t .button-1zW0-r {
-    background-color: transparent; 
-  }
-  
-  /* 6. change color of NEW bar to main color */
-  :root .divider-2rZFJK .unreadPill-3nEWYM {
-    position: relative;
-    color: var(--main-color);
-    top: 0; 
-  }
-  
-  /* 6. change color of new message date to main color */
-  :root .isUnread-3Lojb- .content-3spvdd {
-    color: var(--main-color) !important; 
-  }
+/* 1. changing the border color of in-chat mention + reply */
+:root .mentioned-Tre-dv::before { background-color: var(--main-color); }
+:root .message-2CShn3::before { background-color: var(--main-color); }
+
+/* 1. when hovering over channel mentions */
+:root .channelMention:hover, .mention:hover { 
+  text-decoration: none !important;
+  color: var(--main-color);
+  background-color: var(--background-mentioned-hover); 
+}
+
+/* 5. make bg of quick reacts transparent */
+:root .customItem-1KYL7t .button-1zW0-r {
+  background-color: transparent; 
+}
+
+/* 6. change color of NEW bar to main color */
+:root .divider-2rZFJK .unreadPill-3nEWYM {
+  position: relative;
+  color: var(--main-color);
+  top: 0; 
+}
+
+/* 6. change color of new message date to main color */
+:root .isUnread-3Lojb- .content-3spvdd {
+  color: var(--main-color) !important; 
+}
+
+/*  From HereToHelp  */
+/* recolor the "Send Message" button*/
+.activeButtonChild-2hgLAO {
+  color: var(--main-color);
+}
+:root .button-y6hemj:focus-within .activeButtonChild-2hgLAO, 
+:root .button-y6hemj:focus .activeButtonChild-2hgLAO, 
+:root .button-y6hemj:hover .activeButtonChild-2hgLAO {
+  color: var(--main-color);
+}
+
+/* add hover colors to everything*/
+:root .lookFilled-1H2Jvj.colorBrand-2M3O3N:hover {
+  background: #2e8568 !important;
+  background-color: #2e8568 !important;
+}
