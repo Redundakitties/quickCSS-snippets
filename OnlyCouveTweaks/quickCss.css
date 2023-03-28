@@ -3,31 +3,12 @@
 @import url("https://nyri4.github.io/donators/donators.css");
 @import url("https://fonts.googleapis.com/css2?family=Material+Icons");
 
-/* Cabbage Theme made by NYRI4*/
 :root {
-  --version: "2.3.0";
-  --main-color: #419e85;
-  --avatar-radius: 4px;
-}
-
-.theme-dark {
-  /* BGs */
-  --background-primary: #252a3e;
-  --background-secondary: #1e2337;
-  --background-secondary-alt: #1c2438;
-  --background-secondary-alt-alt: #1b1d31;
-  --background-tertiary: #060c24;
-  --deprecated-store-bg: var(--background-primary);
-  --background-floating: var(--background-secondary);
-  --background-mobile-primary: var(--background-primary);
-  --activity-card-background: var(--background-secondary);
-  --input-background: var(--background-secondary);
-  --modal-background: var(--background-primary);
-  --colortransparency: #0003;
-  --interactive-muted: #565c7bb9;
-
   /* anything selected in menu */
   --background-modifier-selected: var(--background-mentioned);
+
+  /* This isn't shown in my screenshot but I think it looks cool */
+  /* --interactive-active: #6FD6A2; */
   
   /* channel colors */
   --hovering-over-channel: var(--background-mentioned);
@@ -54,14 +35,10 @@
   --brand-experiment: #419e8584; 
   --brand-experiment-15a: var(--background-mentioned-hover);
 
-  /* Cards */
-  --card: #212332;
-  --textcolor: #e4e4e4;
-  --epicshadow1: #fff3;
-  /* Font */
-  --font-display: var(--font-p.guildrimary) !important;
-}
+  /* makes muted text color a little more blue */
+  --interactive-muted: #565c7bb9;
 
+}
 /* 1. changing the border color of in-chat mention + reply */
 :root .mentioned-Tre-dv::before { background-color: var(--main-color); }
 :root .message-2CShn3::before { background-color: var(--main-color); }
@@ -77,7 +54,7 @@
   background-color: transparent;
 }
 
-/* 6. change color of new bar to main color */
+/* 6. change color of NEW bar to main color */
 :root .divider-2rZFJK .unreadPill-3nEWYM {
   position: relative;
   color: var(--main-color);
@@ -87,6 +64,36 @@
 /* 6. change color of new message date to main color */
 :root .isUnread-3Lojb- .content-3spvdd {
   color: var(--main-color) !important;
+}
+
+/* Cabbage Theme made by NYRI4*/
+:root {
+  --version: "2.3.0";
+  --main-color: #419e85;
+  --avatar-radius: 4px;
+}
+
+.theme-dark {
+  /* BGs */
+  --background-primary: #252a3e;
+  --background-secondary: #1e2337;
+  --background-secondary-alt: #1c2438;
+  --background-secondary-alt-alt: #1b1d31;
+  --background-tertiary: #060c24;
+  --deprecated-store-bg: var(--background-primary);
+  --background-floating: var(--background-secondary);
+  --background-mobile-primary: var(--background-primary);
+  --activity-card-background: var(--background-secondary);
+  --input-background: var(--background-secondary);
+  --modal-background: var(--background-primary);
+  --colortransparency: #0003;
+
+  /* Cards */
+  --card: #212332;
+  --textcolor: #e4e4e4;
+  --epicshadow1: #fff3;
+  /* Font */
+  --font-display: var(--font-primary) !important;
 }
 
 /* ------------------ App.css ------------------- */
@@ -173,13 +180,13 @@
   position: relative;
   color: var(--main-color) !important;
 } */
-:root .wrapper-1ZcZW-.mention {
+/* :root .wrapper-1ZcZW-.mention {
   border-radius: 5px;
 }
-/* :root .wrapper-1ZcZW-:hover::after {
+:root .wrapper-1ZcZW-:hover::after {
   opacity: 0.2;
-} */
-/* :root .wrapper-1ZcZW-::after {
+}
+:root .wrapper-1ZcZW-::after {
   content: "";
   position: absolute;
   top: 0;
