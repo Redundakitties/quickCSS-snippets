@@ -132,6 +132,22 @@ rect[mask="url(#svg-mask-status-online-mobile)"] {
 
 /* #endregion */
 
+/* recolor the "Send Message" button*/
+.activeButtonChild-2hgLAO {
+  color: var(--main-color);
+}
+:root .button-y6hemj:focus-within .activeButtonChild-2hgLAO, 
+:root .button-y6hemj:focus .activeButtonChild-2hgLAO, 
+:root .button-y6hemj:hover .activeButtonChild-2hgLAO {
+  color: var(--main-color);
+}
+
+/* add hover colors to everything*/
+:root .lookFilled-1H2Jvj.colorBrand-2M3O3N:hover {
+  background: var(--background-mentioned) !important;
+  background-color: var(--background-mentioned) !important;
+}
+
 /* #region mentions */
 /* changing the border color of in-chat mention + reply */
 :root .mentioned-Tre-dv::before { background-color: var(--main-color); }
@@ -2092,10 +2108,10 @@ html:not(.platform-linux) body:not(.maximized).transparent .appMount-2yBXZl {
   transition: box-shadow 200ms;
 }
 
-:root .lookFilled-1H2Jvj.colorBrand-2M3O3N,
+/* :root .lookFilled-1H2Jvj.colorBrand-2M3O3N,
 :root .lookFilled-1H2Jvj.colorBrand-2M3O3N:hover {
   background: var(--main-color) !important;
-}
+} */
 
 :root .item-2idW98[style*=background-color] {
   background: var(--main-color) !important;

@@ -75,6 +75,6 @@
 
 /* add hover colors to everything*/
 :root .lookFilled-1H2Jvj.colorBrand-2M3O3N:hover {
-  background: #2e8568 !important;
-  background-color: #2e8568 !important;
+  background: var(--background-mentioned) !important;
+  background-color: var(--background-mentioned) !important;
 }

@@ -12,7 +12,7 @@ Comparison:
 
 ## Setup
 ### If you DO have a theme already installed:
-1. Add the contents of this file to the top of your theme (under @imports)
+1. Add the contents of this file to the bottom of your theme
 <a href="https://raw.githubusercontent.com/Redundakitties/quickCSS-snippets/master/OnlyCouveTweaks/theme_snippets.css"><code>./OnlyCouveTweaks/theme_snippets.css</code></a>
 
 2. Also comment out anything involving `.wrapper-1ZcZW-`, these are on lines [81-104](https://github.com/NYRI4/Couve/blob/c43f6f3364e41aa775b5038baddee2ff8144bead/betterdiscord/app.css#L81-L104) in the original app.css file. That should bring back RoleColorEverywhere. 
