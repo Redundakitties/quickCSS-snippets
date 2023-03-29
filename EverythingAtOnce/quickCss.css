@@ -69,10 +69,10 @@
 }
 
 /* #region customize status */
-rect[mask="url(#svg-mask-status-online)"],
+/* rect[mask="url(#svg-mask-status-online)"],
 rect[mask="url(#svg-mask-status-online-mobile)"] {
   fill: var(--main-color);
-}
+} */
 
 /* #region square profiles */
 :root .messagesWrapper-RpOMA3 .cozy-VmLDNB.wrapper-30-Nkg .avatar-2e8lTP {
@@ -132,6 +132,16 @@ rect[mask="url(#svg-mask-status-online-mobile)"] {
 
 /* #endregion */
 
+/* channel dms highlights */
+.channel-1Shao0 .selected-26oxtA {
+  background-color: var(--background-mentioned-hover);
+  color: var(--interactive-active);
+}
+
+:root .channel-1Shao0:hover {
+  background-color: var(--hovering-over-channel);
+}
+
 /* recolor the "Send Message" button*/
 .activeButtonChild-2hgLAO {
   color: var(--main-color);
@@ -144,14 +154,14 @@ rect[mask="url(#svg-mask-status-online-mobile)"] {
 
 /* add hover colors to everything*/
 :root .lookFilled-1H2Jvj.colorBrand-2M3O3N:hover {
-  background: var(--background-mentioned) !important;
-  background-color: var(--background-mentioned) !important;
+  background: var(--channel-icon) !important;
+  background-color: var(--channel-icon) !important;
 }
 
 /* #region mentions */
 /* changing the border color of in-chat mention + reply */
-:root .mentioned-Tre-dv::before { background-color: var(--main-color); }
-:root .message-2CShn3::before { background-color: var(--main-color); }
+:root .mentioned-Tre-dv::before { background-color: var(--interactive-active); }
+:root .message-2CShn3::before { background-color: var(--interactive-active); }
 
 /* when hovering over channel mentions */
 :root .channelMention:hover, .mention:hover { 

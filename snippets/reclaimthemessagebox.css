@@ -43,6 +43,10 @@ button[aria-label="Open sticker picker"] {
   display: none;
 }
 
+:root .sidebar-1tnWFu {
+  width: 196px !important;
+}
+
 /* tweak to position settings icon */
 .panels-3wFtMD>.container-YkUktl:hover .flex-2S1XBF> :not(:last-child) {
   opacity: 100% !important;
