@@ -3,7 +3,7 @@
  */
 #vc-spotify-player {
   --spotify-wave-width: 240px;
-  --spotify-vencord-color: #EBCB8B;
+  --spotify-vencord-color: var(--main-color);
   --spotify-vencord-text: var(--background-primary);
 }
 @keyframes spotifywave {
