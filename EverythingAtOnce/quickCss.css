@@ -136,6 +136,16 @@ rect[mask="url(#svg-mask-status-online-mobile)"] {
   background-color: transparent;
 }
 
+/* no more sticker picker */
+#sticker-picker-tab {
+  display: none;
+}
+
+/* hide border of user lower left modal */
+#vc-spotify-player {
+  border-bottom: 1px solid transparent !important;
+}
+
 /* #region channel category tweaks */
 /* Channel hover and click animation */
 .containerDefault-YUSmu3 {
@@ -1253,8 +1263,7 @@ rect[mask="url(#svg-mask-status-online-mobile)"] {
 
 :root .recentMentionsPopout-2bI1ZN .messagesPopout-eVzQcI .channelHeader-DFRX8q,
 :root .recentMentionsPopout-2bI1ZN .scrollerBase-1Pkza4 .channelHeader-DFRX8q {
-  position: relative;
-  background: transparent;
+  position: sticky;
 }
 
 :root .recentMentionsPopout-2bI1ZN .messagesPopout-eVzQcI .channelHeader-DFRX8q .tertiary-1e-lAP,
