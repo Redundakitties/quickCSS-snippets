@@ -51,6 +51,14 @@
   background: hsla(var(--spotify-vencord-text)/0.7);
 }
 #vc-spotify-player #vc-spotify-progress-bar > [class^=slider] [class^=grabber][class^=grabber] {
+  background-color: transparent;
+  border-color: transparent;
+  color: var(--interactive-normal);
+  border-width: 2px;
+  height: 8px !important;
+  width: 8px !important;
+}
+#vc-spotify-player #vc-spotify-progress-bar > [class^=slider] [class^=grabber][class^=grabber]:hover {
   background-color: var(--spotify-vencord-color);
   border-color: var(--background-primary);
   color: var(--interactive-normal);
