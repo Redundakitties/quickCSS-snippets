@@ -1,13 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Material+Icons");
-/* @import url('https://raw.githubusercontent.com/Redundakitties/quickCSS-snippets/master/snippets/spotify.css'); */
+@import url('https://raw.githubusercontent.com/Redundakitties/quickCSS-snippets/master/snippets/comfywave.css');
 @import url('https://d3sox.github.io/complementary-discord-theme/hide-nitro-upselling.theme.css');
-@import url('https://raw.githubusercontent.com/Redundakitties/quickCSS-snippets/master/snippets/antilagsettings.css');
 @import url('https://raw.githubusercontent.com/Redundakitties/quickCSS-snippets/master/snippets/bgRoleColor.css');
 @import url('https://raw.githubusercontent.com/Redundakitties/quickCSS-snippets/master/snippets/onekoabovemsgbar.css');
 @import url('https://raw.githubusercontent.com/Redundakitties/quickCSS-snippets/master/snippets/customizetopbar.css');
 @import url('https://raw.githubusercontent.com/Redundakitties/quickCSS-snippets/master/snippets/floatingfolders.css');
 @import url('https://raw.githubusercontent.com/Redundakitties/quickCSS-snippets/master/snippets/reclaimthemessagebox.css');
-/* @import url('https://raw.githubusercontent.com/Redundakitties/quickCSS-snippets/master/snippets/blurredcontextmenu.css'); */
+@import url('https://raw.githubusercontent.com/Redundakitties/quickCSS-snippets/master/snippets/borderchange.css');
+@import url("https://stickfab.github.io/pc-fluenticons/FluentIcons.css");
 
 /* Cabbage Theme made by NYRI4*/
 :root {
@@ -68,39 +68,6 @@
   /* Font */
   --font-display: var(--font-primary) !important;
 }
-
-/* #region customize status */
-/* rect[mask="url(#svg-mask-status-online)"],
-rect[mask="url(#svg-mask-status-online-mobile)"] {
-  fill: var(--main-color);
-} */
-
-/* Match bottom border on user profile container with their status - Border change by DeadVoxels#3520, colour vars left over from Jaegerwald#4833's attempt to help me with this. Thanks a ton for getting me into advanced selectors so I could make this though, Jaeger! */
-:root {
-    --online-color: var(--main-color);
-    --idle-color: #f0b132;
-    --dnd-color: #f23f42;
-    --offline-color: #80848e;
-}
-.container-YkUktl:has(.avatar-1EWyVD[aria-label*="Online"]) {
-    border-bottom: 3px solid var(--online-color)!important;
-}
-.container-YkUktl:has(.avatar-1EWyVD[aria-label*="Idle"]) {
-    border-bottom: 3px solid var(--idle-color)!important;
-}
-.container-YkUktl:has(.avatar-1EWyVD[aria-label*="Do Not Disturb"]) {
-    border-bottom: 3px solid var(--dnd-color)!important;
-}
-.container-YkUktl:has(.avatar-1EWyVD[aria-label*="Invisible"]) {
-    border-bottom: 3px solid var(--offline-color)!important;
-}
-
-/* Transition + fallback colour */
-.container-YkUktl {
-    transition: border 100ms ease-in;
-    border-bottom: 3px solid var(--blurple);
-}
-
 
 /* #region square profiles */
 :root .messagesWrapper-RpOMA3 .cozy-VmLDNB.wrapper-30-Nkg .avatar-2e8lTP {
@@ -195,6 +162,15 @@ rect[mask="url(#svg-mask-status-online-mobile)"] {
   background: var(--channel-icon) !important;
   background-color: var(--channel-icon) !important;
 }
+
+/* #region for spotify */
+#vc-spotify-player, #vc-spotify-player + [class*=container-] {
+  --spotify-vencord-wave-width: 240px;
+  --spotify-vencord-color: var(--spotify);
+  /* Use HSL for the next variable */
+  --spotify-vencord-text: var(--primary-600-hsl);
+}
+/* #endregion */
 
 /* #region mentions */
 /* changing the border color of in-chat mention + reply */
@@ -780,6 +756,10 @@ rect[mask="url(#svg-mask-status-online-mobile)"] {
   background: var(--background-secondary);
   box-shadow: none;
 } */
+
+[class^="userPopoutOverlayBackground-3A0Pcz"] {
+    padding-bottom:14px;
+}
 
 :root .reaction-2A2y9y {
   background: var(--colortransparency);
@@ -2679,3 +2659,18 @@ html:not(.platform-linux) body:not(.maximized).transparent .appMount-2yBXZl {
 :root #channelTabs-container~.layers-OrUESM .guilds-2JjMmN {
   margin-top: -85px;
 }
+
+/* Couve gradient */
+/* .progressBar-2yl2pi, .guildSeparator-a4uisj  {
+    background: linear-gradient(to right, #419e85, #009697, #008ba9, #007db6, #116cb6, #5e56a6) !important;
+    animation: rainbowText 300s infinite linear;
+}
+
+@keyframes rainbowText {
+  from {
+    -webkit-filter: hue-rotate(0deg);
+  }
+  to {
+    -webkit-filter: hue-rotate(360deg);
+  }
+} */
