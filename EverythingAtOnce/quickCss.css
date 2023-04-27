@@ -7,7 +7,7 @@
 @import url('https://raw.githubusercontent.com/Redundakitties/quickCSS-snippets/master/snippets/floatingfolders.css');
 @import url('https://raw.githubusercontent.com/Redundakitties/quickCSS-snippets/master/snippets/reclaimthemessagebox.css');
 @import url('https://raw.githubusercontent.com/Redundakitties/quickCSS-snippets/master/snippets/borderchange.css');
-@import url("https://stickfab.github.io/pc-fluenticons/FluentIcons.css");
+/* @import url("https://stickfab.github.io/pc-fluenticons/FluentIcons.css"); */
 
 /* Cabbage Theme made by NYRI4*/
 :root {
@@ -105,6 +105,11 @@
 
 /* no more sticker picker */
 #sticker-picker-tab {
+  display: none;
+}
+
+/* shh Discord I know how to use the quick switcher */
+:root .protip-1jXzAl {
   display: none;
 }
 
@@ -643,6 +648,11 @@
 
 :root .footer-GXWBBp {
   border-radius: 0 0 10px 10px;
+}
+
+:root [class*="spoilerText"][class*="hidden"],
+:root [class*="spoilerText"][class*="hidden"]:hover {
+  background-color: var(--background-secondary);
 }
 
 :root .embedSpotify-1rDvOE {
