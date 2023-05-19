@@ -1,5 +1,7 @@
 # QuickCSS Snippets
-***ONLY FOR DARK THEME***
+
+> **Note**
+> ***ONLY FOR DARK THEME***
 
 The Folder [EverythingAtOnce](https://github.com/Redundakitties/quickCSS-snippets/tree/master/EverythingAtOnce) includes all the snippets in the snippets folder applied to my theme. I will update this readme one day to explain what they all do but their names are fairly self-explanatory. 
 
