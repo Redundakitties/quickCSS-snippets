@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Material+Icons");
+/* @import url('https://raw.githubusercontent.com/Redundakitties/quickCSS-snippets/master/snippets/spotify.css'); */
+@import url('https://d3sox.github.io/complementary-discord-theme/hide-nitro-upselling.theme.css');
+@import url('https://raw.githubusercontent.com/Redundakitties/quickCSS-snippets/master/snippets/antilagsettings.css');
+@import url('https://raw.githubusercontent.com/Redundakitties/quickCSS-snippets/master/snippets/bgRoleColor.css');
+@import url('https://raw.githubusercontent.com/Redundakitties/quickCSS-snippets/master/snippets/onekoabovemsgbar.css');
+@import url('https://raw.githubusercontent.com/Redundakitties/quickCSS-snippets/master/snippets/customizetopbar.css');
+@import url('https://raw.githubusercontent.com/Redundakitties/quickCSS-snippets/master/snippets/floatingfolders.css');
+@import url('https://raw.githubusercontent.com/Redundakitties/quickCSS-snippets/master/snippets/reclaimthemessagebox.css');
+/* @import url('https://raw.githubusercontent.com/Redundakitties/quickCSS-snippets/master/snippets/blurredcontextmenu.css'); */
+
+/* Match bottom border on user profile container with their status - Border change by DeadVoxels#3520, colour vars left over from Jaegerwald#4833's attempt to help me with this. Thanks a ton for getting me into advanced selectors so I could make this though, Jaeger! */
+:root {
+    --online-color: var(--main-color);
+    --idle-color: #f0b132;
+    --dnd-color: #f23f42;
+    --offline-color: #80848e;
+    --avatar-radius: 4px;
+    --main-color: #419e85;
+}
+.container-YkUktl:has(.avatar-1EWyVD[aria-label*="Online"]) {
+    border-bottom: 3px solid var(--online-color)!important;
+}
+.container-YkUktl:has(.avatar-1EWyVD[aria-label*="Idle"]) {
+    border-bottom: 3px solid var(--idle-color)!important;
+}
+.container-YkUktl:has(.avatar-1EWyVD[aria-label*="Do Not Disturb"]) {
+    border-bottom: 3px solid var(--dnd-color)!important;
+}
+.container-YkUktl:has(.avatar-1EWyVD[aria-label*="Invisible"]) {
+    border-bottom: 3px solid var(--offline-color)!important;
+}
+
+/* Transition + fallback colour */
+.container-YkUktl {
+    transition: border 100ms ease-in;
+    border-bottom: 3px solid var(--blurple);
+}
+
+/* #region square profiles */
+.messagesWrapper-RpOMA3 .cozy-VmLDNB.wrapper-30-Nkg .avatar-2e8lTP {
+  border-radius: var(--avatar-radius);
+}
+[class*="banner"] mask {
+  display: none;
+}
+.mask-1y0tyc img {
+  border-radius: 0 !important;
+}
+.mask-1y0tyc foreignObject {
+  mask: none !important;
+  border-radius: var(--avatar-radius) !important;
+}
+/* #endregion */
+
+/* #region block quotes */
+.messagesWrapper-RpOMA3 .cozy-VmLDNB.wrapper-30-Nkg .blockquoteContainer-3VtvI1 blockquote {
+  padding: 8px;
+  background: var(--background-secondary);
+  border-radius: 4px;
+  width: 100%;
+}
+.messagesWrapper-RpOMA3 .cozy-VmLDNB.wrapper-30-Nkg.hasThread-3h-KJV::after {
+  margin-left: 24px;
+}
+.messagesWrapper-RpOMA3 .cozy-VmLDNB.wrapper-30-Nkg.hasThread-3h-KJV .container-2sjPya {
+  margin-left: 48px;
+  border-radius: 8px;
+}
+/* #endregion */
+
+/* make bg of quick reacts transparent */
+.customItem-1KYL7t .button-1zW0-r {
+  background-color: transparent;
+}
+
+/* Channel hover and click animation */
+.containerDefault-YUSmu3 {
+  transition: all 0.5s;
+}
+
+.containerDefault-YUSmu3:hover {
+  transition: all 0.2s;
+  transform: translatex(3px);
+  background-color: var(--hovering-over-channel);
+}
+
+.containerDefault-YUSmu3:active {
+  transition: all 0.2s;
+  transform: translatex(1px);
+}
+
+/* hide search for channel bar */
+.searchBar-3TnChZ {
+  display: none;
+}
