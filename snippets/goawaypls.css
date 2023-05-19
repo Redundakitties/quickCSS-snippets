@@ -1,29 +1,18 @@
 /* No, I don't want to make a thread from a chain of more than 2 replies */
-[class*="threadSuggestionBar-"] {
-    display: none;
-}
+[class*="threadSuggestionBar-"] { display: none; }
 
 /* no more sticker picker */
-#sticker-picker-tab {
+#sticker-picker-tab { display: none; }
+
+/* no more scroll bar in profiles */
+.scroller-15bIdk.thin-RnSY0a.scrollerBase-1Pkza4::-webkit-scrollbar {
     display: none;
 }
 
-/* no more scroll bar in profiles */
-.scroller-15bIdk.thin-RnSY0a.scrollerBase-1Pkza4::-webkit-scrollbar{
-    display: none;
-  }
-  
-  /* shh Discord I know how to use the quick switcher */
-  :root [class*="protip"] {
-    display: none;
-  }
-  :root [class*="quickswitcher"] {
-    padding: 20px;
-  }
+/* shh Discord I know how to use the quick switcher */
+:root [class*="protip"] { display: none; }
 
+:root [class*="quickswitcher"] { padding: 20px; }
 
-  /* hide border of user lower left modal */
-#vc-spotify-player {
-    border-bottom: 1px solid transparent !important;
-  }
-  
+/* hide border of user lower left modal */
+#vc-spotify-player { border-bottom: 1px solid transparent !important; }
