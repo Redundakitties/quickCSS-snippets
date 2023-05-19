@@ -17,9 +17,7 @@
     -webkit-mask-position-x: 0;
   }
 }
-#vc-spotify-player {
-  /* The code below isn't really needed but it looks pretty :3 */
-}
+
 #vc-spotify-player::before {
   content: "";
   position: absolute;
