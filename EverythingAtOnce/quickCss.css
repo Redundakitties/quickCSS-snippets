@@ -7,7 +7,7 @@
 @import url('https://raw.githubusercontent.com/Redundakitties/quickCSS-snippets/master/snippets/floatingfolders.css');
 @import url('https://raw.githubusercontent.com/Redundakitties/quickCSS-snippets/master/snippets/reclaimthemessagebox.css');
 @import url('https://raw.githubusercontent.com/Redundakitties/quickCSS-snippets/master/snippets/borderchange.css');
-@import url('https://raw.githubusercontent.com/Redundakitties/quickCSS-snippets/master/snippets/animateToolbox.css');
+/* @import url('https://raw.githubusercontent.com/Redundakitties/quickCSS-snippets/master/snippets/animateToolbox.css'); */
 @import url('https://raw.githubusercontent.com/Redundakitties/quickCSS-snippets/master/snippets/goawaypls.css');
 
 /* Cabbage Theme made by NYRI4*/
@@ -39,8 +39,8 @@
   
   /* channel colors */
   --hovering-over-channel: var(--background-mentioned);
-  --channel-icon: #419e8584;
-  --channel-text-area-placeholder: #565c7bb9;
+  /* --channel-icon: #419e8584; */
+  --channel-text-area-placeholder: #565c7bb9; 
 
   /* 1. when mentioning a channel bg color */
   --mention-background: var(--background-mentioned);
@@ -79,12 +79,29 @@
 }
 /* #endregion */
 
+/* set profile divider to same color as profile */
+.divider-2dDziJ {
+  opacity: 0.4;
+  background-color: var(--profile-gradient-primary-color);
+}
+
 /* add back @ in front of usernames */
 :is([class*="userTagUsernameBase"],
   [class*="username"][class*="discriminator"],
   [class*="nameTag"] [class*="subtext"]:has([class*="hoverRoll"]) [class*="hovered"],
   [class*="nameTag"] [class*="subtext"]:not(:has([class*="hoverRoll"])))::before {
   content: "@";
+}
+
+/* couve in upper left corner */
+.homeIcon-r0w4ny path {
+  fill: transparent
+}
+
+.homeIcon-r0w4ny {
+  background: url('https://i.imgur.com/2XrlegJ.png') center/cover no-repeat;
+  min-width: 60px;
+  min-height: 60px;
 }
 
 /* #region square profiles */
@@ -122,29 +139,25 @@
   background-color: transparent;
 }
 
-/* #region channel category tweaks */
-/* Channel hover and click animation */
-.containerDefault-YUSmu3 {
-  transition: all 0.5s;
-}
-
-.containerDefault-YUSmu3:hover {
-  transition: all 0.2s;
-  transform: translatex(3px);
-  background-color: var(--hovering-over-channel);
-}
-
-.containerDefault-YUSmu3:active {
-  transition: all 0.2s;
-  transform: translatex(1px);
-}
-
 /* move category titles to the left */
 :root .containerDefault-3TQ5YN {
   left: -11px;
 }
-
 /* #endregion */
+
+/* #region make icons look nicer */
+.icon-2W8DHg {
+  width: 14px;
+  height: 14px;
+}
+
+.modeUnread-3Cxepe .icon-2W8DHg,
+#app-mount .containerDefault-YUSmu3.selected-2TbFuo .content-1gYQeQ .icon-2W8DHg,
+#app-mount .containerDefault-YUSmu3:hover .content-1gYQeQ .icon-2W8DHg
+{
+  color: var(--main-color) !important;
+}
+/* #endregon */
 
 /* channel dms highlights */
 .channel-1Shao0 .selected-26oxtA {
@@ -184,16 +197,6 @@
   background-color: var(--background-mentioned-hover); }
 
 /* #endregion */
-
-.homeIcon-r0w4ny path {
-  fill: transparent
-}
-
-.homeIcon-r0w4ny {
-  background: url('https://i.imgur.com/2XrlegJ.png') center/cover no-repeat;
-  min-width: 60px;
-  min-height: 60px;
-}
 
 /* #region x messages since <time> */
 :root .newMessagesBar-1hF-9G {
