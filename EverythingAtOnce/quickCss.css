@@ -819,6 +819,7 @@
 /* emphasis server pings */
 :root .guilds-2JjMmN .scroller-3X7KbA .listItem-3SmSlK .lowerBadge-3j0ZAg:last-child .numberBadge-37OJ3S {
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5333333333);
+  background-color: var(--main-color) !important;
 }
 
 /* on hover colors default server colors */
@@ -2374,11 +2375,19 @@ html:not(.platform-linux) body:not(.maximized).transparent .appMount-2yBXZl {
 }
 
 :root .container-2IKOsH,
+:root .background-12kWdX,
 :root .header-3xB4vB,
 :root .emptyPage-2TGR7j,
 :root .scrollerContainer-y16Rs9,
 :root .container-1um7CU {
   background-color: var(--background-primary);
+}
+
+:root .row--LCpto {
+  background-color: var(--background-secondary);
+}
+:root .inviteButton-17ob8h {
+  background-color: var(--main-color);
 }
 
 :root .contentWrapper-3oy4Xo {
