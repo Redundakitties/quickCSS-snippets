@@ -28,17 +28,6 @@ button[aria-label="Open sticker picker"] {
   width: 220px;
 }
 
-/* Hide User Buttons until Hover*/
-.panels-3wFtMD>.container-YkUktl .flex-2S1XBF> :not(:last-child) {
-  opacity: 0% !important;
-  width: 22px;
-  transition: all 0.2s ease-in-out;
-}
-
-.panels-3wFtMD>.container-YkUktl .nameTag-sc-gpq .title-338goq {
-  overflow: visible;
-}
-
 ::-webkit-resizer {
   display: none;
 }
@@ -46,10 +35,3 @@ button[aria-label="Open sticker picker"] {
 :root .sidebar-1tnWFu {
   width: 196px !important;
 }
-
-/* tweak to position settings icon */
-.panels-3wFtMD>.container-YkUktl:hover .flex-2S1XBF> :not(:last-child) {
-  opacity: 100% !important;
-  width: 22px;
-}
-
