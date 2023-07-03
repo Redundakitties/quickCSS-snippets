@@ -85,6 +85,11 @@
   background-color: var(--profile-gradient-primary-color);
 }
 
+/* Add yellow warning colour to masked links on hover */
+[id^="message-content-"] a[href][title$=")"]:hover {
+    color: var(--text-warning);
+}
+
 /* add back @ in front of usernames */
 :is([class*="userTagUsernameBase"],
   [class*="username"][class*="discriminator"],
@@ -143,7 +148,25 @@
 :root .containerDefault-3TQ5YN {
   left: -11px;
 }
-/* #endregion */
+
+/* User buttons hide away in drawer */
+.container-YkUktl {
+  height: auto !important;
+  padding: 8px 10px;
+  flex-direction: column;
+  align-items: stretch;
+}
+.container-YkUktl > div { width: 100%; }
+.container-YkUktl > div:nth-child(2) {
+  justify-content: space-between;
+  max-height: 0;
+  overflow: hidden;
+  transition-property: max-height;
+  transition-duration: .15s;
+  transition-timing-function: ease-in-out;
+}
+.container-YkUktl:hover > div:nth-child(2) { max-height: 32px; }
+.container-YkUktl > div:nth-child(2) > button { width: 100%; }
 
 /* #region make icons look nicer */
 .icon-2W8DHg {
@@ -1523,7 +1546,7 @@
   border-radius: 8px;
 }
 
-:root .directoryModal-YJsOMv {
+.directoryContainer-z-0pgp {
   background-color: var(--background-primary);
 }
 
@@ -2676,18 +2699,3 @@ html:not(.platform-linux) body:not(.maximized).transparent .appMount-2yBXZl {
 :root #channelTabs-container~.layers-OrUESM .guilds-2JjMmN {
   margin-top: -85px;
 }
-
-/* Couve gradient */
-/* .progressBar-2yl2pi, .guildSeparator-a4uisj  {
-    background: linear-gradient(to right, #419e85, #009697, #008ba9, #007db6, #116cb6, #5e56a6) !important;
-    animation: rainbowText 300s infinite linear;
-}
-
-@keyframes rainbowText {
-  from {
-    -webkit-filter: hue-rotate(0deg);
-  }
-  to {
-    -webkit-filter: hue-rotate(360deg);
-  }
-} */
