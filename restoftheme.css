@@ -58,8 +58,6 @@
   --font-display: var(--font-primary) !important;
 }
 
-.sidebar-1tnWFu { width: 165px !important; }
-
 /* #region for spotify */
 #vc-spotify-player, #vc-spotify-player + [class*=container-] {
   --spotify-vencord-wave-width: 240px;
