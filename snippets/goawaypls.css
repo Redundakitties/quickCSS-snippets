@@ -16,3 +16,20 @@
 
 /* hide border of user lower left modal */
 #vc-spotify-player { border-bottom: 1px solid transparent !important; }
+
+/* Hide Nitro gift button */
+button[aria-label="Send a gift"] { display: none; }
+
+/* Hide GIF picker button */
+button[aria-label="Open GIF picker"] { display: none; }
+
+/* Hide sticker picker button */
+button[aria-label="Open sticker picker"] { display: none; }
+
+/* Hide annoying sticker popup window that appears when you type */
+.da-channelTextArea>.container-JHR0NT { display: none; }
+
+[href="/store"] { display: none; }
+
+::-webkit-resizer { display: none; }
+  

@@ -1,0 +1,22 @@
+/* Make pronouns stand out more */
+.pronouns-17_QV6 {
+  text-transform: lowercase;
+  color: var(--text-normal);
+  background: linear-gradient(var(--profile-gradient-primary-color),var(--profile-gradient-primary-color) 60px,var(--profile-gradient-secondary-color)) !important;
+  padding: 2px 4px;
+  border-radius: var(--avatar-radius);
+}
+
+/* add back @ in front of usernames */
+:is([class*="userTagUsernameBase"],
+  [class*="username"][class*="discriminator"],
+  [class*="nameTag"] [class*="subtext"]:has([class*="hoverRoll"]) [class*="hovered"],
+  [class*="nameTag"] [class*="subtext"]:not(:has([class*="hoverRoll"])))::before {
+  content: "@";
+}
+
+/* set profile divider to same color as profile */
+.divider-2dDziJ {
+  opacity: 0.4;
+  background-color: var(--profile-gradient-primary-color);
+}
