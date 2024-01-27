@@ -1,12 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Material+Icons");
 @import url('https://raw.githubusercontent.com/Redundakitties/quickCSS-snippets/master/snippets/comfywave.css');
 @import url('https://d3sox.github.io/complementary-discord-theme/hide-nitro-upselling.theme.css');
+/* @import url('https://raw.githubusercontent.com/Redundakitties/quickCSS-snippets/master/restoftheme.css'); */
 @import url('https://raw.githubusercontent.com/Redundakitties/quickCSS-snippets/master/snippets/bgRoleColor.css');
 @import url('https://raw.githubusercontent.com/Redundakitties/quickCSS-snippets/master/snippets/onekoabovemsgbar.css');
+/* @import url('https://raw.githubusercontent.com/Redundakitties/quickCSS-snippets/master/snippets/floatingfolders.css'); */
+/* @import url('https://raw.githubusercontent.com/Redundakitties/quickCSS-snippets/master/snippets/borderchange.css'); */
 @import url('https://raw.githubusercontent.com/Redundakitties/quickCSS-snippets/master/snippets/goawaypls.css');
 @import url('https://raw.githubusercontent.com/Redundakitties/quickCSS-snippets/master/snippets/profiletweaks.css');
 /* macchiato */
 @import url("https://catppuccin.github.io/discord/dist/catppuccin-macchiato.theme.css");
+/* @import url('https://raw.githubusercontent.com/Redundakitties/quickCSS-snippets/master/snippets/micsettingsdrawer.css'); */
 
 [class^="sidebar"] { width: 165px !important; }
 
@@ -19,7 +23,6 @@
 
 /* hides icons in upper container */
 [class^="toolbar"] [aria-label="Threads"],
-[class^="toolbar"] [aria-label="Pinned Messages"],
 [class^="toolbar"] [class*=anchor] [aria-label="Help"],
 [class^="toolbar"] [aria-label="Start Video Call"],
 [class^="toolbar"] [aria-label="Notification Settings"] {
@@ -91,4 +94,20 @@ ul > li[role="listitem"] a[href="/channels/@me"] {
 /* adjust spacing above pinned dms */
 ul > h2[class="privateChannelsHeaderContainer_ddcec6 container_de798d"] {
   padding: 4px 4px 4px 8px;
+}
+
+[class^="ready"] {
+  display: none;
+}
+[class^="ready"]+[class^="text"] {
+  top: 82px;
+}
+[class^="ready"]+[class^="text"]::before {
+  content: "";
+  position: absolute;
+  bottom: 100px;
+  left: -22px;
+  width: 200px;
+  height: 200px;
+  background: url("https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/logos/exports/1544x1544_circle.png") center/80% no-repeat;
 }
