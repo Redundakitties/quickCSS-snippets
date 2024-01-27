@@ -93,7 +93,8 @@ ul > li[role="listitem"] a[href="/channels/@me"] {
 
 /* adjust spacing above pinned dms */
 ul > h2[class="privateChannelsHeaderContainer_ddcec6 container_de798d"] {
-  padding: 4px 4px 4px 8px;
+  padding: 10px 8px 4px 18px;
+  height: 32px;
 }
 
 [class^="ready"] {
