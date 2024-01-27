@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Material+Icons");
+@import url('https://raw.githubusercontent.com/Redundakitties/quickCSS-snippets/master/snippets/comfywave.css');
+@import url('https://d3sox.github.io/complementary-discord-theme/hide-nitro-upselling.theme.css');
+@import url('https://raw.githubusercontent.com/Redundakitties/quickCSS-snippets/master/snippets/bgRoleColor.css');
+@import url('https://raw.githubusercontent.com/Redundakitties/quickCSS-snippets/master/snippets/onekoabovemsgbar.css');
+@import url('https://raw.githubusercontent.com/Redundakitties/quickCSS-snippets/master/snippets/goawaypls.css');
+@import url('https://raw.githubusercontent.com/Redundakitties/quickCSS-snippets/master/snippets/profiletweaks.css');
+/* macchiato */
+@import url("https://catppuccin.github.io/discord/dist/catppuccin-macchiato.theme.css");
+
+[class^="sidebar"] { width: 165px !important; }
+
+[class*=messageContent] :is(h1, h2, h3) {
+  color: #419E85;
+}
+[class*=messageContent] strong {
+    color: #6FD6A2;
+}
+
+/* hides icons in upper container */
+[class^="toolbar"] [aria-label="Threads"],
+[class^="toolbar"] [aria-label="Pinned Messages"],
+[class^="toolbar"] [class*=anchor] [aria-label="Help"],
+[class^="toolbar"] [aria-label="Start Video Call"],
+[class^="toolbar"] [aria-label="Notification Settings"] {
+  display: none;
+}
+
+/* removes all section dividers ever */
+[class^=sectionDivider] { display: none; }
+/* recolors message dividers except unreads */
+[class^=divider][class*=hasContent]:not([class*=isUnread]) { border-top: thin solid var(--background-tertiary); }
+
+/* home icon */
+.wrapper_d281dd[data-list-item-id="guildsnav___home"] .childWrapper__01b9c {
+    background: url('https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/logos/exports/1544x1544_circle.png') center/cover no-repeat;
+    background-size: cover !important;
+}
+.wrapper_d281dd[data-list-item-id="guildsnav___home"] .childWrapper__01b9c svg {
+    display: none;
+}
+
+/* block quotes */
+[class*="messageContent"] > [class^="blockquoteContainer"] {
+  padding: 8px;
+  background: var(--background-secondary);
+  border-radius: 4px;
+  width: 100%;
+}
+[class*="messageContent"] > [class^="blockquoteContainer"] > [class^="blockquoteDivider"] { display: none; }
+
+/* watermark */
+[class^="wordmark"] svg { display: none; }
+
+/* messing around with the textarea */
+[class^="channelTextArea"] {
+  bottom: -9px;
+}
+.scroller__1f96e {
+  height: 103%;
+}
+[class^="typing"] {
+  font-size: 10px;
+  bottom: -3px;
+}
+
+/* User buttons hide away in drawer */
+.container_ca50b9 {
+  height: auto !important;
+  padding: 8px 10px;
+  flex-direction: column;
+  align-items: stretch;
+}
+.container_ca50b9 > div { width: 100%; }
+.container_ca50b9 > div:nth-child(2) {
+  justify-content: space-between;
+  max-height: 0;
+  overflow: hidden;
+  transition-property: max-height;
+  transition-duration: .15s;
+  transition-timing-function: ease-in-out;
+}
+.container_ca50b9:hover > div:nth-child(2) { max-height: 32px; }
+.container_ca50b9 > div:nth-child(2) > button { width: 100%; }
+
+/* hide friend tab */
+ul > li[role="listitem"] a[href="/channels/@me"] {
+	display: none;
+}
+
+/* adjust spacing above pinned dms */
+ul > h2[class="privateChannelsHeaderContainer_ddcec6 container_de798d"] {
+  padding: 4px 4px 4px 8px;
+}
