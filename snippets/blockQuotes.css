@@ -1,0 +1,8 @@
+/* block quotes */
+[class*="messageContent"] > [class^="blockquoteContainer"] {
+  padding: 8px;
+  background: var(--background-secondary);
+  border-radius: 4px;
+  width: 100%;
+}
+[class*="messageContent"] > [class^="blockquoteContainer"] > [class^="blockquoteDivider"] { display: none; }

@@ -1,0 +1,26 @@
+/* quick switcher */
+.layer_ad604d:has([class^="quickswitcher"]) {
+    justify-content: start;
+  }
+  [class^="quickswitcher"] {
+    background: none;
+    box-shadow: none;
+  }
+  [class^="quickswitcher"] .scroller__52ae7 {
+    margin: 0;
+    border-radius: 0 0 8px 8px;
+    scrollbar-width: none;
+  }
+  [class^="quickswitcher"] [class^="input"] {
+    height: 50px;
+  }
+  [class^="quickswitcher"].input__848cd[value=""] {
+    border-radius: 8px;
+  }
+  [class^="quickswitcher"] .input__848cd:not([value=""]) {
+    border-radius: 8px 8px 0 0;
+  }
+  [class^="quickswitcher"] [class^="pro-tip"] {
+    display: none;
+  }
+  

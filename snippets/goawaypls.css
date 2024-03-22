@@ -1,5 +1,5 @@
 /* No, I don't want to make a thread from a chain of more than 2 replies */
-[class*="threadSuggestionBar-"] { display: none; }
+[class^="threadSuggestionBar_"] { display: none; }
 
 /* no more sticker picker */
 #sticker-picker-tab { display: none; }
@@ -10,9 +10,9 @@
 }
 
 /* shh Discord I know how to use the quick switcher */
-:root [class*="protip"] { display: none; }
+:root [class^="protip"] { display: none; }
 
-:root [class*="quickswitcher"] { padding: 20px; }
+:root [class^="quickswitcher"] { padding: 20px; }
 
 /* hide border of user lower left modal */
 #vc-spotify-player { border-bottom: 1px solid transparent !important; }
