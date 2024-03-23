@@ -30,3 +30,6 @@
 **Settings Collapse**
 
 ![settingsCollapse](media/settingsCollapse.gif)
+
+**QuickSwitcher v2**
+![quickSwitcher](media/quickswitcher.png)

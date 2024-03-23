@@ -19,11 +19,6 @@
 /* no more sticker picker */
 #sticker-picker-tab { display: none; }
 
-/* no more scroll bar in profiles */
-.scroller-15bIdk.thin-RnSY0a.scrollerBase-1Pkza4::-webkit-scrollbar {
-    display: none;
-}
-
 /* shh Discord I know how to use the quick switcher */
 :root [class^="protip"] { display: none; }
 
