@@ -1,20 +1,24 @@
-.role-2TIOKu {
+/* RolesBackground */
+/* from BetterDiscord: https://discord.com/channels/86004744966914048/836694789898109009/1168944142601158666 */
+/* by Carrot */
+
+.role__631a3 {
   transform: translate(0);
   overflow: hidden;
   border: 0;
 
-  --transparency: .4;
-  border-radius: 5px;
+  --transparency: .4; /*Change Background Opacity*/
+  border-radius: 5px; /*Change Roundness of Roles*/
 }
-.role-2TIOKu .roleRemoveIcon-387wKV {
+.role__631a3 .roleRemoveIcon__7f63d {
   margin: 0;
   left: unset;
-  transform: translate(50%, -50%);
+  transform: translate(50%,-50%);
 }
-.role-2TIOKu .roleRemoveButton-17oXnT {
+.role__631a3 .roleRemoveButton__737f2 {
   position: static;
 }
-.role-2TIOKu .roleCircle-3TFUOr:after {
+.role__631a3 .roleCircle_bae511:after {
   content: '';
   top: 0;
   left: 0;

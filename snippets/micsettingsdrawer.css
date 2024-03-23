@@ -1,12 +1,19 @@
 /* User buttons hide away in drawer */
+/* from BetterDiscord: https://discord.com/channels/1015060230222131221/1028106818368589824/1092886512393273426 */
+/* by Deko */
+
 .container_ca50b9 {
   height: auto !important;
   padding: 8px 10px;
   flex-direction: column;
   align-items: stretch;
 }
-.container_ca50b9 > div { width: 100%; }
-.container_ca50b9 > div:nth-child(2) {
+
+.container_ca50b9>div {
+  width: 100%;
+}
+
+.container_ca50b9>div:nth-child(2) {
   justify-content: space-between;
   max-height: 0;
   overflow: hidden;
@@ -14,5 +21,11 @@
   transition-duration: .15s;
   transition-timing-function: ease-in-out;
 }
-.container_ca50b9:hover > div:nth-child(2) { max-height: 32px; }
-.container_ca50b9 > div:nth-child(2) > button { width: 100%; }
+
+.container_ca50b9:hover>div:nth-child(2) {
+  max-height: 32px;
+}
+
+.container_ca50b9>div:nth-child(2)>button {
+  width: 100%;
+}

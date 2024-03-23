@@ -1,4 +1,7 @@
-/* Floating Folders */
+/* Floating Folder */
+/* from BetterDiscord: https://discord.com/channels/86004744966914048/836694789898109009/1073071319077359667 */
+/* created by Disease */
+
 .wrapper-38slSD:active {
   -webkit-transform: unset;
   transform: none;
@@ -21,4 +24,13 @@
 
 [id^="folder-items-"]::-webkit-scrollbar {
   display: none;
+}
+
+.folderIconWrapper-1oRIZr {
+  transform: rotate(-90deg);
+}
+
+.closedFolderIconWrapper-3tRb2d .icon-1zKOXL,
+.expandedFolderIconWrapper-3RwQpD svg {
+  transform: rotate(90deg);
 }

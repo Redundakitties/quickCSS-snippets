@@ -1,4 +1,7 @@
 /* quick switcher */
+/* from Vencord: https://discord.com/channels/1015060230222131221/1028106818368589824/1219940806194888785 */
+/* by DaBluLite */
+
 .layer_ad604d:has([class^="quickswitcher"]) {
     justify-content: start;
   }

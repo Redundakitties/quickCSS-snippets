@@ -1,3 +1,18 @@
+/* random misc css that hides things I don't like */
+
+/* hides icons in upper container */
+[class^="toolbar"] [aria-label="Threads"],
+[class^="toolbar"] [class*=anchor] [aria-label="Help"],
+[class^="toolbar"] [aria-label="Start Video Call"],
+[class^="toolbar"] [aria-label="Notification Settings"] {
+  display: none;
+}
+
+/* removes all section dividers ever */
+[class^=sectionDivider] { display: none; }
+/* recolors message dividers except unreads */
+[class^=divider][class*=hasContent]:not([class*=isUnread]) { border-top: thin solid var(--background-tertiary); }
+
 /* No, I don't want to make a thread from a chain of more than 2 replies */
 [class^="threadSuggestionBar_"] { display: none; }
 
@@ -23,6 +38,9 @@ button[aria-label="Open sticker picker"],
 [href="/store"] {
     display: none;
 }
+
+/* watermark */
+[class^="wordmark"] svg { display: none; }
 
 ::-webkit-resizer { display: none; }
   

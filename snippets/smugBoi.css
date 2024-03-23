@@ -1,0 +1,20 @@
+/* adds catpuccin to loading screen */
+/* created by Elf, idea taken from Couve */
+
+[class^="ready"] {
+    display: none;
+}
+
+[class^="ready"]+[class^="text"] {
+    top: 82px;
+}
+
+[class^="ready"]+[class^="text"]::before {
+    content: "";
+    position: absolute;
+    bottom: 100px;
+    left: -30px;
+    width: 200px;
+    height: 200px;
+    background: url("https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/logos/exports/1544x1544_circle.png") center/80% no-repeat;
+}

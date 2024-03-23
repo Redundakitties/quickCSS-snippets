@@ -112,3 +112,24 @@ ul > h2[class="privateChannelsHeaderContainer_ddcec6 container_de798d"] {
   height: 200px;
   background: url("https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/logos/exports/1544x1544_circle.png") center/80% no-repeat;
 }
+
+/* hide obnoxoius scroll bars may break */
+.auto__76cc7 {
+  scrollbar-width: none;
+}
+.thin_b1c063 {
+  scrollbar-width: none;
+}
+
+/* search bar */
+.toolbar__88c63 {
+flex-direction: row;
+justify-content: flex-start;
+}
+
+.toolbar__88c63 .search__07df0 {
+order: 1; /* This moves the search element to the end */
+}
+.icon_f50f05 {
+color: #8aadf4;
+}
