@@ -1,38 +1,26 @@
-@import url("https://fonts.googleapis.com/css2?family=Material+Icons");
-@import url('https://raw.githubusercontent.com/Redundakitties/quickCSS-snippets/master/snippets/comfywave.css');
 @import url('https://d3sox.github.io/complementary-discord-theme/hide-nitro-upselling.theme.css');
-/* @import url('https://raw.githubusercontent.com/Redundakitties/quickCSS-snippets/master/restoftheme.css'); */
-@import url('https://raw.githubusercontent.com/Redundakitties/quickCSS-snippets/master/snippets/bgRoleColor.css');
-@import url('https://raw.githubusercontent.com/Redundakitties/quickCSS-snippets/master/snippets/onekoabovemsgbar.css');
-/* @import url('https://raw.githubusercontent.com/Redundakitties/quickCSS-snippets/master/snippets/floatingfolders.css'); */
-/* @import url('https://raw.githubusercontent.com/Redundakitties/quickCSS-snippets/master/snippets/borderchange.css'); */
-@import url('https://raw.githubusercontent.com/Redundakitties/quickCSS-snippets/master/snippets/goawaypls.css');
-@import url('https://raw.githubusercontent.com/Redundakitties/quickCSS-snippets/master/snippets/profiletweaks.css');
+@import url('https://raw.githubusercontent.com/Redundakitties/quickCSS-snippets/main/snippets/bgRoleColor.css');
+@import url('https://raw.githubusercontent.com/Redundakitties/quickCSS-snippets/main/snippets/blockQuotes.css');
+@import url('https://raw.githubusercontent.com/Redundakitties/quickCSS-snippets/main/snippets/borderchange.css');
+@import url('https://raw.githubusercontent.com/Redundakitties/quickCSS-snippets/main/snippets/goawaypls.css');
+@import url('https://raw.githubusercontent.com/Redundakitties/quickCSS-snippets/main/snippets/micsettingsdrawer.css');
+@import url('https://raw.githubusercontent.com/Redundakitties/quickCSS-snippets/main/snippets/onekoabovemsgbar.css');
+@import url('https://raw.githubusercontent.com/Redundakitties/quickCSS-snippets/main/snippets/profiletweaks.css');
+@import url('https://raw.githubusercontent.com/Redundakitties/quickCSS-snippets/main/snippets/quickSwitcher.css');
+@import url('https://raw.githubusercontent.com/Redundakitties/quickCSS-snippets/main/snippets/smugBoi.css');
+
 /* macchiato */
 @import url("https://catppuccin.github.io/discord/dist/catppuccin-macchiato.theme.css");
-/* @import url('https://raw.githubusercontent.com/Redundakitties/quickCSS-snippets/master/snippets/micsettingsdrawer.css'); */
 
+/* shrink sidebar */
 [class^="sidebar"] { width: 165px !important; }
 
 [class*=messageContent] :is(h1, h2, h3) {
-  color: #419E85;
+  color: #8aadf4;
 }
 [class*=messageContent] strong {
-    color: #6FD6A2;
+    color: #8aadf4;
 }
-
-/* hides icons in upper container */
-[class^="toolbar"] [aria-label="Threads"],
-[class^="toolbar"] [class*=anchor] [aria-label="Help"],
-[class^="toolbar"] [aria-label="Start Video Call"],
-[class^="toolbar"] [aria-label="Notification Settings"] {
-  display: none;
-}
-
-/* removes all section dividers ever */
-[class^=sectionDivider] { display: none; }
-/* recolors message dividers except unreads */
-[class^=divider][class*=hasContent]:not([class*=isUnread]) { border-top: thin solid var(--background-tertiary); }
 
 /* home icon */
 .wrapper_d281dd[data-list-item-id="guildsnav___home"] .childWrapper__01b9c {
@@ -42,18 +30,6 @@
 .wrapper_d281dd[data-list-item-id="guildsnav___home"] .childWrapper__01b9c svg {
     display: none;
 }
-
-/* block quotes */
-[class*="messageContent"] > [class^="blockquoteContainer"] {
-  padding: 8px;
-  background: var(--background-secondary);
-  border-radius: 4px;
-  width: 100%;
-}
-[class*="messageContent"] > [class^="blockquoteContainer"] > [class^="blockquoteDivider"] { display: none; }
-
-/* watermark */
-[class^="wordmark"] svg { display: none; }
 
 /* messing around with the textarea */
 [class^="channelTextArea"] {
@@ -67,69 +43,40 @@
   bottom: -3px;
 }
 
-/* User buttons hide away in drawer */
-.container_ca50b9 {
-  height: auto !important;
-  padding: 8px 10px;
-  flex-direction: column;
-  align-items: stretch;
-}
-.container_ca50b9 > div { width: 100%; }
-.container_ca50b9 > div:nth-child(2) {
-  justify-content: space-between;
-  max-height: 0;
-  overflow: hidden;
-  transition-property: max-height;
-  transition-duration: .15s;
-  transition-timing-function: ease-in-out;
-}
-.container_ca50b9:hover > div:nth-child(2) { max-height: 32px; }
-.container_ca50b9 > div:nth-child(2) > button { width: 100%; }
+/* hide obnoxious scroll bars */
+/* removes scroll from channel */
+.auto__76cc7 { scrollbar-width: none; }
+/* removes scroll from channel sidebar */
+.thin_b1c063 { scrollbar-width: none; }
+/* removes scroll from profile */
+.thin__62e51 { scrollbar-width: none; }
 
-/* hide friend tab */
-ul > li[role="listitem"] a[href="/channels/@me"] {
-	display: none;
-}
-
-/* adjust spacing above pinned dms */
-ul > h2[class="privateChannelsHeaderContainer_ddcec6 container_de798d"] {
-  padding: 10px 8px 4px 18px;
-  height: 32px;
-}
-
-[class^="ready"] {
-  display: none;
-}
-[class^="ready"]+[class^="text"] {
-  top: 82px;
-}
-[class^="ready"]+[class^="text"]::before {
-  content: "";
-  position: absolute;
-  bottom: 100px;
-  left: -22px;
-  width: 200px;
-  height: 200px;
-  background: url("https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/logos/exports/1544x1544_circle.png") center/80% no-repeat;
-}
-
-/* hide obnoxoius scroll bars may break */
-.auto__76cc7 {
-  scrollbar-width: none;
-}
-.thin_b1c063 {
-  scrollbar-width: none;
+/* removing the scrollbar messes with emoji picker /shrug */
+/* this puts it back */
+.scrollableContainer__33e06 {
+    padding: 0px 6px 0px 0px;
 }
 
 /* search bar */
 .toolbar__88c63 {
-flex-direction: row;
-justify-content: flex-start;
+  flex-direction: row;
+  justify-content: flex-start;
 }
-
 .toolbar__88c63 .search__07df0 {
-order: 1; /* This moves the search element to the end */
+  order: 1; /* This moves the search element to the end */
 }
 .icon_f50f05 {
-color: #8aadf4;
+  color: #8aadf4;
+}
+
+/* colors bg of users in member list */
+.member_aa4760 span.username_d272d6::after {
+  content: "";
+  background: currentColor;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  opacity: 0.11;
+  left: 0;
+  top: 0;
 }

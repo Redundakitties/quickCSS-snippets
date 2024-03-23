@@ -27,10 +27,12 @@
 /* hide border of user lower left modal */
 #vc-spotify-player { border-bottom: 1px solid transparent !important; }
 
+/* hide chat icons, store, and friend tab */
 button[aria-label="Send a gift"],
 button[aria-label="Open GIF picker"],
 button[aria-label="Open sticker picker"],
-[href="/store"] {
+[href="/store"],
+ul > li[role="listitem"] a[href="/channels/@me"] {
     display: none;
 }
 
