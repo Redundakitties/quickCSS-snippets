@@ -2,7 +2,7 @@
 /* created by Elf, idea taken from Couve */
 
 [class*="messageContent"] > [class^="blockquoteContainer"] {
-  padding: 8px;
+  padding: 10px 3px;
   background: var(--background-secondary);
   border-radius: 4px;
   width: 100%;
