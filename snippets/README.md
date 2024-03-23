@@ -26,8 +26,10 @@
 <details>
 <summary><a href="https://github.com/catppuccin/discord/blob/main/themes/macchiato.theme.css">Catppuccin</a>   
 </summary>
+<br>
+ <img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/logos/exports/1544x1544_circle.png" alt="Catppuccin logo" width="100" height="100">
   
-![Catppuccin](https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/logos/exports/1544x1544_circle.png)
+ - lovely theme with so many pleasing soft pastel colors 🥰
 
 </details>
 <details>
