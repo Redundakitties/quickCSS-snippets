@@ -1,12 +1,15 @@
 # QuickCSS Snippets
 
 > [!NOTE]  
-> ***ONLY FOR DARK THEME***
+> ***Works as of March 2024***
 
 ### Go here if you just want to use my snippets: https://github.com/Redundakitties/quickCSS-snippets/tree/main/snippets
 
 
 ## Couve Tweaks 
+> [!WARNING]  
+> ***Has since been deprecated***
+
 ![CouveTweaks](cabbage.png)
 The Folder [EverythingAtOnce](https://github.com/Redundakitties/quickCSS-snippets/tree/master/EverythingAtOnce) includes all the snippets in the snippets folder applied to my theme. There is now a README detailing what each snippet does. Only took me an entire year. 
 
