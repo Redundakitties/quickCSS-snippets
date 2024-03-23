@@ -1,10 +1,10 @@
 /* Make pronouns stand out more */
-.pronouns-17_QV6 {
+.pronouns__8bcdb {
   text-transform: lowercase;
   color: var(--text-normal);
   background: linear-gradient(var(--profile-gradient-primary-color),var(--profile-gradient-primary-color) 60px,var(--profile-gradient-secondary-color)) !important;
   padding: 2px 4px;
-  border-radius: var(--avatar-radius);
+  border-radius: 5px;
 }
 
 /* add back @ in front of usernames */
@@ -16,7 +16,7 @@
 }
 
 /* set profile divider to same color as profile */
-.divider-2dDziJ {
+.divider__2bbbc {
   opacity: 0.4;
   background-color: var(--profile-gradient-primary-color);
 }

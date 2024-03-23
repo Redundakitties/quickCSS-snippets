@@ -1,25 +1,22 @@
 /* Match bottom border on user profile container with their status - Border change by DeadVoxels#3520, colour vars left over from Jaegerwald#4833's attempt to help me with this. Thanks a ton for getting me into advanced selectors so I could make this though, Jaeger! */
-:root {
-    --online-color: var(--main-color);
-    --idle-color: #f0b132;
-    --dnd-color: #f23f42;
-    --offline-color: #80848e;
+.container_ca50b9:has(.wrapper_edb6e0[aria-label*="Online"]) {
+    border-bottom: 5px solid var(--text-positive) !important;
 }
-.container-YkUktl:has(.avatar-1EWyVD[aria-label*="Online"]) {
-    border-bottom: 3px solid var(--online-color)!important;
+
+.container_ca50b9:has(.wrapper_edb6e0[aria-label*="Idle"]) {
+    border-bottom: 5px solid var(--text-warning) !important;
 }
-.container-YkUktl:has(.avatar-1EWyVD[aria-label*="Idle"]) {
-    border-bottom: 3px solid var(--idle-color)!important;
+
+.container_ca50b9:has(.wrapper_edb6e0[aria-label*="Do Not Disturb"]) {
+    border-bottom: 5px solid var(--text-danger) !important;
 }
-.container-YkUktl:has(.avatar-1EWyVD[aria-label*="Do Not Disturb"]) {
-    border-bottom: 3px solid var(--dnd-color)!important;
-}
-.container-YkUktl:has(.avatar-1EWyVD[aria-label*="Invisible"]) {
-    border-bottom: 3px solid var(--offline-color)!important;
+
+.container_ca50b9:has(.wrapper_edb6e0[aria-label*="Invisible"]) {
+    border-bottom: 5px solid #80848e !important;
 }
 
 /* Transition + fallback colour */
-.container-YkUktl {
+.container_ca50b9 {
     transition: border 100ms ease-in;
-    border-bottom: 3px solid var(--blurple);
+    border-bottom: 5px solid var(--blurple);
 }
