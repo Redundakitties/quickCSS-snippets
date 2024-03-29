@@ -2,28 +2,28 @@
 /* from Vencord: https://discord.com/channels/1015060230222131221/1028106818368589824/1219940806194888785 */
 /* by DaBluLite */
 
-.layer_ad604d:has([class^="quickswitcher"]) {
-    justify-content: start;
-  }
-  [class^="quickswitcher"] {
-    background: none;
-    box-shadow: none;
-  }
-  [class^="quickswitcher"] .scroller__52ae7 {
-    margin: 0;
-    border-radius: 0 0 8px 8px;
-    scrollbar-width: none;
-  }
-  [class^="quickswitcher"] [class^="input"] {
-    height: 50px;
-  }
-  [class^="quickswitcher"].input__848cd[value=""] {
-    border-radius: 8px;
-  }
-  [class^="quickswitcher"] .input__848cd:not([value=""]) {
-    border-radius: 8px 8px 0 0;
-  }
-  [class^="quickswitcher"] [class^="pro-tip"] {
-    display: none;
-  }
+.layer_c14d31:has([class^="quickswitcher"]) {
+  justify-content: start;
+}
+[class^="quickswitcher"] {
+  background: none;
+  box-shadow: none;
+}
+[class^="quickswitcher"] .scroller_d4b86c {
+  margin: 0;
+  border-radius: 0 0 8px 8px;
+  scrollbar-width: none;
+}
+[class^="quickswitcher"] [class^="input"] {
+  height: 50px;
+}
+[class^="quickswitcher"].input__2a648[value=""] {
+  border-radius: 8px;
+}
+[class^="quickswitcher"] .input__2a648:not([value=""]) {
+  border-radius: 8px 8px 0 0;
+}
+[class^="quickswitcher"] [class^="pro-tip"] {
+  display: none;
+}
   

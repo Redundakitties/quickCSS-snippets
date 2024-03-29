@@ -2,7 +2,7 @@
 /* from BetterDiscord: https://discord.com/channels/86004744966914048/836694789898109009/1168944142601158666 */
 /* by Carrot */
 
-.role__631a3 {
+.role_d81130 {
   transform: translate(0);
   overflow: hidden;
   border: 0;
@@ -10,15 +10,15 @@
   --transparency: .4; /*Change Background Opacity*/
   border-radius: 5px; /*Change Roundness of Roles*/
 }
-.role__631a3 .roleRemoveIcon__7f63d {
+.role_d81130 .roleRemoveIcon_c3913a {
   margin: 0;
   left: unset;
   transform: translate(50%,-50%);
 }
-.role__631a3 .roleRemoveButton__737f2 {
+.role_d81130 .roleRemoveButton__20c70 {
   position: static;
 }
-.role__631a3 .roleCircle_bae511:after {
+.role_d81130 .roleCircle__61ad8:after {
   content: '';
   top: 0;
   left: 0;

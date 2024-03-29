@@ -1,22 +1,22 @@
 /* Match bottom border on user profile container with their status - Border change by DeadVoxels#3520, colour vars left over from Jaegerwald#4833's attempt to help me with this. Thanks a ton for getting me into advanced selectors so I could make this though, Jaeger! */
-.container_ca50b9:has(.wrapper_edb6e0[aria-label*="Online"]) {
+.container_debb33:has(.wrapper__3ed10[aria-label*="Online"]) {
     border-bottom: 5px solid var(--text-positive) !important;
 }
 
-.container_ca50b9:has(.wrapper_edb6e0[aria-label*="Idle"]) {
+.container_debb33:has(.wrapper__3ed10[aria-label*="Idle"]) {
     border-bottom: 5px solid var(--text-warning) !important;
 }
 
-.container_ca50b9:has(.wrapper_edb6e0[aria-label*="Do Not Disturb"]) {
+.container_debb33:has(.wrapper__3ed10[aria-label*="Do Not Disturb"]) {
     border-bottom: 5px solid var(--text-danger) !important;
 }
 
-.container_ca50b9:has(.wrapper_edb6e0[aria-label*="Invisible"]) {
+.container_debb33:has(.wrapper__3ed10[aria-label*="Invisible"]) {
     border-bottom: 5px solid #80848e !important;
 }
 
 /* Transition + fallback colour */
-.container_ca50b9 {
+.container_debb33 {
     transition: border 100ms ease-in;
     border-bottom: 5px solid var(--blurple);
 }

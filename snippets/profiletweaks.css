@@ -1,5 +1,5 @@
 /* Make pronouns stand out more */
-.pronouns__8bcdb {
+.pronouns__8aa38 {
   text-transform: lowercase;
   color: var(--text-normal);
   background: linear-gradient(var(--profile-gradient-primary-color),var(--profile-gradient-primary-color) 60px,var(--profile-gradient-secondary-color)) !important;
@@ -8,7 +8,7 @@
 }
 
 /* add back @ in front of usernames */
-:is([class*="userTagUsernameBase"],
+:is([class^="userTagUsernameBase"],
   [class*="username"][class*="discriminator"],
   [class*="nameTag"] [class*="subtext"]:has([class*="hoverRoll"]) [class*="hovered"],
   [class*="nameTag"] [class*="subtext"]:not(:has([class*="hoverRoll"])))::before {
@@ -16,7 +16,7 @@
 }
 
 /* set profile divider to same color as profile */
-.divider__2bbbc {
+.divider_d6f39c {
   opacity: 0.4;
   background-color: var(--profile-gradient-primary-color);
 }
