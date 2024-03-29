@@ -23,11 +23,11 @@
 }
 
 /* home icon */
-.wrapper_d281dd[data-list-item-id="guildsnav___home"] .childWrapper__01b9c {
+.wrapper__8436d[data-list-item-id="guildsnav___home"] .childWrapper_a6ce15 {
     background: url('https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/logos/exports/1544x1544_circle.png') center/cover no-repeat;
     background-size: cover !important;
 }
-.wrapper_d281dd[data-list-item-id="guildsnav___home"] .childWrapper__01b9c svg {
+.wrapper__8436d[data-list-item-id="guildsnav___home"] .childWrapper_a6ce15 svg {
     display: none;
 }
 
@@ -35,7 +35,7 @@
 [class^="channelTextArea"] {
   bottom: -9px;
 }
-.scroller__1f96e {
+.scroller_e412fe {
   height: 103%;
 }
 [class^="typing"] {
@@ -45,7 +45,7 @@
 
 /* hide obnoxious scroll bars */
 /* removes scroll from channel */
-.auto__76cc7 { scrollbar-width: none; }
+.auto__020ac { scrollbar-width: none; }
 /* removes scroll from channel sidebar */
 .thin_b1c063 { scrollbar-width: none; }
 /* removes scroll from profile */
@@ -53,19 +53,19 @@
 
 /* removing the scrollbar messes with emoji picker /shrug */
 /* this puts it back */
-.scrollableContainer__33e06 {
+.scrollableContainer_ff917f {
     padding: 0px 6px 0px 0px;
 }
 
 /* search bar */
-.toolbar__88c63 {
+.toolbar__62fb5 {
   flex-direction: row;
   justify-content: flex-start;
 }
-.toolbar__88c63 .search__07df0 {
+.toolbar__62fb5 .search__07df0 {
   order: 1; /* This moves the search element to the end */
 }
-.icon_f50f05 {
+.icon__5c8c7 {
   color: #8aadf4;
 }
 
@@ -79,4 +79,13 @@
   opacity: 0.11;
   left: 0;
   top: 0;
+}
+
+.role_d81130 {
+  transform: translate(0);
+  overflow: hidden;
+  border: 0;
+
+  --transparency: .4; /*Change Background Opacity*/
+  border-radius: 5px; /*Change Roundness of Roles*/
 }
