@@ -1,20 +1,21 @@
-/* adds catpuccin to loading screen */
-/* created by Elf, idea taken from Couve */
+/* Adds catpuccin to loading screen */
+/* from Vencord: https://discord.com/channels/1015060230222131221/1028106818368589824/1223837351831277590 */
+/* created by refac0r */
 
-[class^="ready"] {
+/* smugboi */
+.container__827e6 video.ready__61f2f {
     display: none;
 }
-
-[class^="ready"]+[class^="text"] {
-    top: 82px;
-}
-
-[class^="ready"]+[class^="text"]::before {
-    content: "";
-    position: absolute;
-    bottom: 100px;
-    left: -30px;
-    width: 200px;
-    height: 200px;
-    background: url("https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/logos/exports/1544x1544_circle.png") center/80% no-repeat;
+.content_de05de::before {
+    visibility: visible;
+    content: '';
+    display: block;
+    background: url("https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/logos/exports/1544x1544_circle.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 128px;
+    height: 128px;
+    margin: auto;
+    margin-bottom: 48px;
 }
